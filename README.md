@@ -30,6 +30,7 @@ _Start the watch server_
 
 `npm run watch`
 
+> The default port for viewing your game is 5550. This can be changed in the _pnkit.json_ file.
 
 ## Workflow
 
@@ -96,7 +97,7 @@ Not currently used for `phaser-node-kit`, but will generate a "Browserified" bun
 
 If you run a `clean` command the bundle will be replaced with the default. Make sure to pull this bundle if you would like to use it elsewhere. 
 
-If you want to use the bundle in your current project, you must edit your _game/index.html_ and replace the default _phaser.js_ with _phaser-bundle.js_. Make sure to place the file in the _vendor_directory. 
+If you want to use the bundle in your current project, you must edit your _game/index.html_ and replace the default _phaser.js_ with _phaser-bundle.js_. Make sure to place the file in the _vendor_ directory. 
 
 Generally, this command is not needed except in unique situations.
 
