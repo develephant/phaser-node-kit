@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "postinstall": "postinstall.js"
+    "postinstall": "scripts/postinstall.js"
   },
   "repository": {
     "type": "git",
