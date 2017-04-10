@@ -55,7 +55,7 @@ module.exports.p = {
     console.log(clr.log(`\xBB ${str}`))
   },
   title: function() {
-    console.log(clr.title('\xBB PhaserJS to FireOS Web App Builder \xAB'))
+    console.log(clr.title('\xBB Phaser Node Kit \xAB'))
   },
   fun: function(str) {
     console.log(clr.fun(str))
