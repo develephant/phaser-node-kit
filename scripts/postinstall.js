@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * phaser-node-kit
  * @author C. Byerley
