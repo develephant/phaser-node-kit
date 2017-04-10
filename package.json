@@ -1,6 +1,6 @@
 {
   "name": "phaser-node-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Phaser Node Kit (PhaserJS + NodeJS)",
   "bin": {
     "pnkit": "cli.js"
