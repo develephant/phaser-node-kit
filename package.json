@@ -41,7 +41,6 @@
     "browserify": "^14.1.0",
     "colors": "^1.1.2",
     "light-server": "^2.0.1",
-    "phaser-ce": "^2.7.5",
-    "socket.io": "^1.7.3"
+    "phaser-ce": "^2.7.5"
   }
 }
