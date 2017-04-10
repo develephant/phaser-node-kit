@@ -2,17 +2,17 @@
   "name": "phaser-node-kit",
   "version": "1.0.0",
   "description": "Phaser Node Kit (PhaserJS + NodeJS)",
-  "main": "index.js",
+  "bin": {
+    "pnkit": "cli.js"
+  },
   "babel": {
     "presets": [
       "es2015"
     ]
   },
   "scripts": {
-    "postinstall": "scripts/postinstall.js",
-    "packer": "scripts/packer.js",
-    "builder": "scripts/builder.js",
-    "cleaner": "scripts/cleaner.js"
+    "postinstall": "postinstall.js",
+    "serve": "light-server -s build -p 5550"
   },
   "repository": {
     "type": "git",
@@ -33,13 +33,15 @@
     "url": "https://github.com/develephant/phaser-node-kit/issues"
   },
   "homepage": "https://github.com/develephant/phaser-node-kit#readme",
-  "devDependencies": { },
+  "devDependencies": {},
   "dependencies": {
     "@develephant/fsp": "^1.0.0",
+    "argparse": "^1.0.9",
     "babel-cli": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
     "browserify": "^14.1.0",
     "colors": "^1.1.2",
+    "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
     "phaser-ce": "^2.7.5"
   }

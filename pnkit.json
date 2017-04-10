@@ -1,13 +1,15 @@
 {
-  "game": 
+  "copy": 
   {
     "css": "css",
     "data": "data",
     "fonts": "font",
     "icons": "icons",
     "images": "img",
-    "javascript": "js",
     "sounds": "snd",
     "vendor": "vendor"
+  },
+  "bundle": {
+    "javascript": "js"
   }
 }
