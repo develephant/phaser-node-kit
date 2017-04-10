@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/**
+ * phaser-node-kit
+ * @author C. Byerley
+ * @copyright (c)2017 develephant.com
+ * @license MIT
+ * https://github.com/develephant/phaser-node-kit
+ */
 const Build = require('./lib/build')
 const Clean = require('./lib/clean')
 const Phaserify = require('./lib/phaserify')
