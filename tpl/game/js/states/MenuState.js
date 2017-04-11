@@ -1,7 +1,6 @@
 
 /* Menu State */
 class MenuState {
-
   preload() { }
 
   create() {
@@ -19,7 +18,6 @@ class MenuState {
   }
 
   update() { }
-
   render() { }
 }
 

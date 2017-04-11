@@ -1,0 +1,10 @@
+site_name: Phaser Node Kit
+pages:
+  - Overview: index.md
+  - Installation: install.md
+  - Commands: cli.md
+  - Workflow: workflow.md
+  - Configuration: config.md
+  - Additional Notes: notes.md
+  - 'Issues/Corrections': issues.md
+theme: material
