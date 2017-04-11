@@ -34,6 +34,6 @@ _Start the watch server_
 
 ## Documentation
 
-#### [View the full docs here](https://develephant.github.io/phaser-node-kit/)
+### [Click here for usage documentation.](https://develephant.github.io/phaser-node-kit/)
 
 #### `phaser-node-kit` &Star; &copy; 2017 develephant &Star; MIT license
