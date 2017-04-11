@@ -1,0 +1,16 @@
+{
+  "build": {
+    "game": [
+      "data",
+      "font"
+    ],
+	  "external": []
+  },
+	"port": 5550,
+	"interval": 750,
+	"serve": "build",
+	"watchexps": [
+		"game/** # npm run build"
+	],
+	"quiet": true
+}

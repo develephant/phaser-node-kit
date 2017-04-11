@@ -3,8 +3,7 @@
   {
     "css": "css",
     "data": "data",
-    "fonts": "font",
-    "icons": "icons",
+    "font": "font",
     "images": "img",
     "sounds": "snd",
     "vendor": "vendor"
