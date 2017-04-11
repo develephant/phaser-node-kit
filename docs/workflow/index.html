@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.5.4">
+    
+    
+      
+        <title>Workflow - Phaser Node Kit</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="Phaser Node Kit" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Workflow
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Phaser Node Kit
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" title="Commands" class="md-nav__link">
+      Commands
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Workflow
+      </label>
+    
+    <a href="./" title="Workflow" class="md-nav__link md-nav__link--active">
+      Workflow
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#some-context" title="Some Context" class="md-nav__link">
+    Some Context
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" title="The Big Picture" class="md-nav__link">
+    The Big Picture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexes" title="Indexes" class="md-nav__link">
+    Indexes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexcss" title="index.css" class="md-nav__link">
+    index.css
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" title="index.html" class="md-nav__link">
+    index.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexjs" title="index.js" class="md-nav__link">
+    index.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#states" title="States" class="md-nav__link">
+    States
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phaser-node-kit-states" title="Phaser Node Kit States" class="md-nav__link">
+    Phaser Node Kit States
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstatejs" title="BootState.js" class="md-nav__link">
+    BootState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preloadstatejs" title="PreloadState.js" class="md-nav__link">
+    PreloadState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menustatejs" title="MenuState.js" class="md-nav__link">
+    MenuState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamestatejs" title="GameState.js" class="md-nav__link">
+    GameState.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-an-engine" title="Making An Engine" class="md-nav__link">
+    Making An Engine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-classes" title="Extending Classes" class="md-nav__link">
+    Extending Classes
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notes/" title="Additional Notes" class="md-nav__link">
+      Additional Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../issues/" title="Issues/Corrections" class="md-nav__link">
+      Issues/Corrections
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#some-context" title="Some Context" class="md-nav__link">
+    Some Context
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" title="The Big Picture" class="md-nav__link">
+    The Big Picture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexes" title="Indexes" class="md-nav__link">
+    Indexes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexcss" title="index.css" class="md-nav__link">
+    index.css
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" title="index.html" class="md-nav__link">
+    index.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexjs" title="index.js" class="md-nav__link">
+    index.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#states" title="States" class="md-nav__link">
+    States
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phaser-node-kit-states" title="Phaser Node Kit States" class="md-nav__link">
+    Phaser Node Kit States
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstatejs" title="BootState.js" class="md-nav__link">
+    BootState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preloadstatejs" title="PreloadState.js" class="md-nav__link">
+    PreloadState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menustatejs" title="MenuState.js" class="md-nav__link">
+    MenuState.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamestatejs" title="GameState.js" class="md-nav__link">
+    GameState.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-an-engine" title="Making An Engine" class="md-nav__link">
+    Making An Engine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-classes" title="Extending Classes" class="md-nav__link">
+    Extending Classes
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="workflow">Workflow</h1>
+<p>So here comes the "fairly opinionated" part.</p>
+<p>While there is nothing different about the coding in general, there are some design choices made on where files reside and how they are incorporated into the workflow that you need to be aware of.</p>
+<p>But before we go there, some context...</p>
+<h2 id="some-context">Some Context</h2>
+<p>I've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and have spent the last five working with the Lua game development community, mostly building server based tools. I heart making games, teaching, and developing tools and workflows to help people make games with less fuss. Having discovered <strong>Phaser</strong> and brushing up with <strong>Node</strong>, I've found my ideal tool set. Having used this kit for a while now, I thought others might enjoy using it as well.</p>
+<p>Okay, enough context. ^_^</p>
+<h2 id="the-big-picture">The Big Picture</h2>
+<p>I like to get up and running quick when an idea hits me. I prototype constantly (or just noodle around) and don't like to spend time on tooling. Set it and forget works great for me.</p>
+<p>The goal for <strong>Phaser Node Kit</strong> was to be able to get to the <em>creative</em> phase as quick as possible. </p>
+<p>So with a <code>pnkit init</code></p>
+<p>And a <code>npm run watch</code></p>
+<p>I'm looking at a "live" build in my browser ready to hack on, with a <em>build</em> folder ready to serve or bundle with something like <a href="https://cordova.apache.org/">Cordova</a>.</p>
+<p>I enjoy a certain amount of abstraction in code -- though sometimes a one-pager will do just fine. With <em>Phaser Node Kit</em> there is a level of abstraction in regards to <em>Phaser</em> states, which will be explained more below. Beyond that its pretty much business as usual for both <em>Phaser</em> and <em>Node</em>, assuming you keep a few things in mind.</p>
+<h2 id="indexes">Indexes</h2>
+<p>The different index files have some basic data for their particular domain.</p>
+<h3 id="indexcss">index.css</h3>
+<p>The included css file (<em>game/css/index.css</em>) contains the page wide background color, as well as an implementation of <em>clean.css</em> which provides better visual compatibility across browsers.</p>
+<h3 id="indexhtml">index.html</h3>
+<p>The html entry point (<em>game/index.html</em>) contains some standard scaffolding, as well as <em>apple-mobile-web</em> meta tags.</p>
+<h3 id="indexjs">index.js</h3>
+<p>The javascript entry point (<em>game/index.js</em>) contains the <em>state</em> assignments and a device render mode check:</p>
+<pre><code class="js">// PHASER IS IMPORTED AS AN EXTERNAL BUNDLE IN INDEX.HTML
+const runPhaser = function(renderMode) {
+
+  renderMode = Phaser.CANVAS
+
+  /* States */
+  const bootState     = require('./states/BootState')
+  const preloadState  = require('./states/PreloadState')
+  const menuState     = require('./states/MenuState')
+  const gameState     = require('./states/GameState')
+
+  const game = new Phaser.Game(800, 600, renderMode, 'game')
+
+  //add states
+  game.state.add('Boot',       bootState)
+  game.state.add('Preloader',  preloadState)
+  game.state.add('MainMenu',   menuState)
+  game.state.add('Game',       gameState)
+
+  //start the `boot` state
+  game.state.start('Boot')
+
+}
+
+Phaser.Device.whenReady(() =&gt; {
+  let renderMode = Phaser.CANVAS
+
+  if (Phaser.Device.desktop) {
+    renderMode = Phaser.WEBGL
+  } else if (Phaser.Device.android) {
+    if (Phaser.Device.isAndroidStockBrowser()) {
+      renderMode = Phaser.WEBGL
+    } else {
+      renderMode = Phaser.CANVAS
+    }
+
+  } else if (Phaser.Device.iOS) {
+    renderMode = Phaser.WEBGL
+  }
+
+  runPhaser(renderMode)
+})
+</code></pre>
+
+<h2 id="states">States</h2>
+<h3 id="phaser-node-kit-states">Phaser Node Kit States</h3>
+<p><em>Phaser</em> has an excellent state system to manange different game scenes; like the main menu, game play, IAP, etc. I tend to put as little as possible in the state files. Usually just boilerplate and configuration based code. <em>Phaser Node Kit</em> keeps all the state files in a <code>state</code> directory inside of the main <code>js</code> folder.</p>
+<p>There are four state files included, which run in the following order:</p>
+<ul>
+<li>
+<p><em>BootState.js</em></p>
+</li>
+<li>
+<p><em>PreloadState.js</em></p>
+</li>
+<li>
+<p><em>MenuState.js</em></p>
+</li>
+<li>
+<p><em>GameState.js</em></p>
+</li>
+</ul>
+<p>Lets look inside...</p>
+<blockquote>
+<p>While I'm sure its obvious, from here on out we'll be using Node and es2015.</p>
+</blockquote>
+<h4 id="bootstatejs">BootState.js</h4>
+<p>The <em>BootState</em> is the first state that is run once <em>Phaser</em> is ready for it. It contains mostly configuration code, and preloads the "loading" bar into the image cache, which is used in the next state.</p>
+<pre><code class="js">class BootState {
+
+  preload() {
+    this.stage.backgroundColor = 0x000000
+
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+    this.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+    this.scale.setMinMax(300, 400)
+
+    this.scale.pageAlignVertically = true
+    this.scale.pageAlignHorizontally = true
+
+    if (Phaser.Device.desktop === false) {
+      this.scale.forceOrientation(false, true)
+    }
+
+    this.load.image('preload', 'img/preload.png')
+  }
+
+  create() {
+    this.input.maxPointers = 1
+    this.state.start('Preloader')
+  }
+
+  update() { }
+  render() { }
+}
+
+module.exports = BootState
+</code></pre>
+
+<p>In particular, the <em>BootState</em> contains:</p>
+<ul>
+<li>Background color</li>
+<li>Scale mode</li>
+<li>Fullscreen mode</li>
+<li>Scale min/max</li>
+<li>Container alignment</li>
+<li>Orientation setting</li>
+<li>maxPointers setting</li>
+</ul>
+<p>If you like your backgrounds black, and develop in an 800x600 display size, you never have to touch this file. ^_^</p>
+<p>Once the <em>BootState</em> is done, it automatically load the next state, which is the... </p>
+<h4 id="preloadstatejs">PreloadState.js</h4>
+<p>In the <em>PreloadState</em> we load all of the assets needed for the game. While this is happening the "loading" bar will display the progress (I love free progress bars).</p>
+<pre><code class="js">class PreloadState {
+
+  preload() {
+    this.preloadBar = null
+
+    this.preloadBar = this.game.add.sprite(
+      this.game.world.centerX, 
+      this.game.world.centerY, 
+      'preload')
+
+    this.preloadBar.anchor.set(.5)
+
+    this.load.setPreloadSprite(this.preloadBar)
+
+    this.load.image('logo', 'img/logo.png')
+    this.load.image('node', 'img/node.png')
+  }
+
+  create() {
+    this.state.start('MainMenu')
+  }
+
+  update() { }
+  render() { }
+}
+
+module.exports = PreloadState
+</code></pre>
+
+<p>As far as states are concerned, you may visit this one most often to add additional assets to your game.</p>
+<p>Once the <em>PreloadState</em> has run its course, it will load the <em>MenuState</em>.</p>
+<h4 id="menustatejs">MenuState.js</h4>
+<p>Main menus are generally not very complex. A background and a couple buttons is usually the bulk of it. The <em>MenuState</em> here is very minimal. We are simply displaying the <em>Phaser</em> logo, and the waiting for the <code>onTap</code> signal from the input manager.</p>
+<pre><code class="js">class MenuState {
+  preload() { }
+
+  create() {
+    //bg
+    let logo = this.game.add.image(
+      this.game.world.centerX, 
+      this.game.world.centerY, 
+      'logo')
+
+    logo.anchor.set(.5)
+
+    this.input.onTap.addOnce((pointer) =&gt; {
+      this.state.start('Game')
+    })
+  }
+
+  update() { }
+  render() { }
+}
+
+module.exports = MenuState
+</code></pre>
+
+<p>Do what you will to it, but make sure to point to the <em>GameState</em> as your final destination (at least in this case).</p>
+<p>Let the game begin!</p>
+<h4 id="gamestatejs">GameState.js</h4>
+<p>Ahh, finally. Now we play. The <em>GameState</em> is just what it sounds like. Here is where your game takes flight. </p>
+<p>You may be suprised to see this:</p>
+<pre><code class="js">class GameState {
+  preload() { 
+    console.log('game state started') 
+  }
+
+  create() { 
+    let node = this.game.add.image(
+      this.game.world.centerX, 
+      this.game.world.centerY, 
+      'node')
+
+    node.anchor.set(.5)
+  }
+
+  update() { }
+  render() { }
+}
+
+module.exports = GameState
+</code></pre>
+
+<p>Not much of a game. But believe it or not, the <em>GameState</em> will be your <em>leanest</em> state.</p>
+<p>Here we are simply displaying the <em>Node</em> logo for something to do. Its also where we jump off the state train, and move into our development domain.</p>
+<h2 id="making-an-engine">Making An Engine</h2>
+<p>A moment ago I mentioned that the <em>GameState</em> would be your <em>leanest</em> state. This is done by building some modules in the root <code>js</code> directory and adding them to the <em>GameState.js</em>. This approach makes it really simple to change out your <em>engine</em> code modules with other alternatives for testing ideas, etc.</p>
+<p>Lets look at how this works in practice. First we need to create an <strong><em>engine.js</em></strong> file in the root <em>js</em> directory to put our game "controller" code in. This <em>engine.js</em> will be used to orchastrate the systems in your game. This makes it much easier to manage your game overall. A single point of entry and exit.</p>
+<p>First a simple <em>engine.js</em>:</p>
+<pre><code class="js">class Engine {
+  constructor(game) {
+    this.game = game
+  }
+
+  run() {
+    console.log('engine started')
+  }
+}
+
+module.exports = Engine
+</code></pre>
+
+<p>We are simply taking in the <code>game</code> reference and storing for use within the class.</p>
+<blockquote>
+<p>An important distinction to make here is that the <code>game</code> is an entry point to the Phaser library. In a state file, the <code>game</code> is inferred. This can cause mistakes when jumping into different coding contexts.</p>
+</blockquote>
+<p>As an example, in the engine file we'd use the following to access the input manager:</p>
+<pre><code class="js">this.game.input
+</code></pre>
+
+<p>In a state file (and only a state file) it can also be written like so:</p>
+<pre><code class="js">this.input //wont work in engine.js
+</code></pre>
+
+<p>When looking at other code examples on the web, be sure to double check this if your results are unexpected.</p>
+<p>Moving on, it's time to wire up the <em>engine.js</em> to the <em>GameState.js</em>:</p>
+<p><strong>GameState.js</strong></p>
+<pre><code class="js">const Engine = require('../engine')
+
+class GameState {
+  preload() { }
+
+  create() {
+    let engine = new Engine(this).run()
+  }
+
+  update() { }
+  render() { }
+}
+
+module.exports = GameState
+
+</code></pre>
+
+<p>Your needs may vary, but I most often include my <em>ui.js</em> here as well and pass it to the <em>engine.js</em>, ending up with something like:</p>
+<pre><code class="js">const Ui = require('../ui')
+const Engine = require('../engine)
+
+class GameState() {
+  create() {
+    let ui = new Ui(this)
+    let engine = new Engine(this, ui)
+  }
+}
+
+module.exports = GameState
+</code></pre>
+
+<p>And fire it all up in the <em>engine.js</em>:</p>
+<pre><code class="js">class Engine() {
+  constructor(game, ui) {
+    this.game = game
+    this.ui = ui
+
+    this.ui.run() //assuming a run method
+    this.run()
+  }
+
+  run() {
+    console.log('engine started')
+  }
+}
+
+module.exports = Engine
+</code></pre>
+
+<p>The following code demonstrates <em>the</em> common pattern when making any additional classes:</p>
+<pre><code class="js">class SomeClass {
+  constructor(game) {
+    this.game = game
+  }
+}
+
+module.exports = SomeClass
+</code></pre>
+
+<h2 id="extending-classes">Extending Classes</h2>
+<p>Again, we are working in the root <code>js</code> folder now (and forever). As an example of extending a <em>Phaser</em> class, lets look at a Sprite:</p>
+<pre><code class="js">class MySprite extends Phaser.Sprite {
+  constructor(game, x, y, img) {
+    super(game, x, y, img)
+
+    //look ma, I'm a Sprite!
+    this.alpha = .5
+  }
+}
+
+module.exports = MySprite
+
+</code></pre>
+
+<p><em>Usage:</em></p>
+<pre><code class="js">const MySprite = require('./mySprite.js')
+
+class SomeClass {
+  constructor(game) {
+    this.game = game
+
+    this.sprite = new MySprite(this.game, 0, 0, 'logo')
+    this.sprite.anchor.set(.5)
+  }
+}
+
+module.exports = SomeClass
+
+</code></pre>
+
+<p>Now, if you were to run the <em>SomeClass</em> nothing would be displayed on the screen. We must add the Sprite to the display list. This can be done in a couple of different ways, and happens on its own in some cases, such as adding the Sprite to a visible and active group.</p>
+<p>The most direct way to add this Sprite to the display list is like so:</p>
+<pre><code class="js">//SomeClass constructor
+constructor(game) {
+  this.game = game
+  let sprite = new MySprite(this.game, 0, 0, 'logo')
+
+  this.game.world.add(sprite)
+}
+</code></pre>
+
+<blockquote>
+<p>In most use cases, the sprite above should be put in a predfined group, rather than directly in the world.</p>
+</blockquote>
+<p>If you have a group already on the display list, adding the Sprite will make it come alive:</p>
+<pre><code class="js">//SomeClass constructor
+constructor(game, grp) {
+  this.game = game
+  this.grp = grp //on display list
+
+  let sprite = new MySprite(this.game, 0, 0, 'logo')
+  this.grp.add(sprite) //sprite becomes visible
+}
+</code></pre>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../cli/" title="Commands" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Commands
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../config/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Configuration
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-0b7df094bf.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

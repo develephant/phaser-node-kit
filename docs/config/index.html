@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.5.4">
+    
+    
+      
+        <title>Configuration - Phaser Node Kit</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="Phaser Node Kit" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Configuration
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Phaser Node Kit
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" title="Commands" class="md-nav__link">
+      Commands
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow/" title="Workflow" class="md-nav__link">
+      Workflow
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Configuration
+      </label>
+    
+    <a href="./" title="Configuration" class="md-nav__link md-nav__link--active">
+      Configuration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pnkitjson" title="pnkit.json" class="md-nav__link">
+    pnkit.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-keys" title="Configuration Keys" class="md-nav__link">
+    Configuration Keys
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" title="build" class="md-nav__link">
+    build
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game" title="game" class="md-nav__link">
+    game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external" title="external" class="md-nav__link">
+    external
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port" title="port" class="md-nav__link">
+    port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interval" title="interval" class="md-nav__link">
+    interval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serve" title="serve" class="md-nav__link">
+    serve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watchexps" title="watchexps" class="md-nav__link">
+    watchexps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quiet" title="quiet" class="md-nav__link">
+    quiet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#light-server" title="light-server" class="md-nav__link">
+    light-server
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notes/" title="Additional Notes" class="md-nav__link">
+      Additional Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../issues/" title="Issues/Corrections" class="md-nav__link">
+      Issues/Corrections
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pnkitjson" title="pnkit.json" class="md-nav__link">
+    pnkit.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-keys" title="Configuration Keys" class="md-nav__link">
+    Configuration Keys
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" title="build" class="md-nav__link">
+    build
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game" title="game" class="md-nav__link">
+    game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external" title="external" class="md-nav__link">
+    external
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port" title="port" class="md-nav__link">
+    port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interval" title="interval" class="md-nav__link">
+    interval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serve" title="serve" class="md-nav__link">
+    serve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watchexps" title="watchexps" class="md-nav__link">
+    watchexps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quiet" title="quiet" class="md-nav__link">
+    quiet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#light-server" title="light-server" class="md-nav__link">
+    light-server
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="configuration">Configuration</h1>
+<p><strong>Phaser Node Kit</strong> is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths, and adjust the watch server settings.</p>
+<h2 id="pnkitjson">pnkit.json</h2>
+<p>All of the Phaser Node Kit project settings can be found in the <strong><em>pnkit.json</em></strong> file at the root of the project directory. This file is critical to the tools operation. Don't lose it. ^_^</p>
+<p>The default configuration file looks like so:</p>
+<pre><code class="json">{
+  &quot;build&quot;: {
+    &quot;game&quot;: [
+      &quot;data&quot;,
+      &quot;font&quot;
+    ],
+    &quot;external&quot;: []
+  },
+  &quot;port&quot;: 5550,
+  &quot;interval&quot;: 750,
+  &quot;serve&quot;: &quot;build&quot;,
+  &quot;watchexps&quot;: [
+    &quot;game/** # npm run build&quot;
+  ],
+  &quot;quiet&quot;: true
+}
+</code></pre>
+
+<h2 id="configuration-keys">Configuration Keys</h2>
+<p>What follows is a detailed explanation of the <em>pnkit.json</em> keys.</p>
+<h3 id="build">build</h3>
+<p>The build section contains two keys holding arrays named <code>game</code> and <code>external</code>, which can be used to adjust your source directories.</p>
+<h4 id="game">game</h4>
+<p>By default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:</p>
+<ul>
+<li>
+<p>Create the new directory in your <em>game</em> folder.</p>
+</li>
+<li>
+<p>Add an entry to the <code>game</code> key array.</p>
+</li>
+</ul>
+<p><em>In the default config above, the directories <strong>data</strong> and <strong>font</strong> are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the <strong>pnkit.json</strong> file.</em> </p>
+<h4 id="external">external</h4>
+<p>If you would like to include directories in the build from outside of the <em>game</em> directory, you can add them to this array. The steps are the same as for the <code>game</code> key above. </p>
+<h3 id="port">port</h3>
+<p>The port the watch server will use. The default port is 5550.</p>
+<h3 id="interval">interval</h3>
+<p>The time in milliseconds between watch updates. The default is 750.</p>
+<h3 id="serve">serve</h3>
+<p>The directory that will be served up. The default is the <em>build</em> directory.</p>
+<h3 id="watchexps">watchexps</h3>
+<p>The server watch expressions. </p>
+<p>The default is to watch the <em>game</em> directory and run a "clean-n-build" on changes.</p>
+<p><em>In the config above, the pound sign (#) is not a comment, but a separator. Do not remove it. For more info see the <strong>light-server</strong> entry below.</em></p>
+<h3 id="quiet">quiet</h3>
+<p>Keep the noise down on the watch server output. The default is <code>true</code>.</p>
+<hr />
+<h2 id="light-server">light-server</h2>
+<p>Phaser Node Kit uses the crafty <strong>light-server</strong> package to serve up your game in progress. You can learn more about its usage options at <a href="https://www.npmjs.com/package/light-server">https://www.npmjs.com/package/light-server</a>.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../workflow/" title="Workflow" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Workflow
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../notes/" title="Additional Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Additional Notes
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-0b7df094bf.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
