@@ -2,6 +2,7 @@
   "name": "phaser-node-kit",
   "version": "1.1.0",
   "description": "Phaser Node Kit (PhaserJS + NodeJS)",
+  "preferGlobal": true,
   "bin": {
     "pnkit": "cli.js"
   },
@@ -43,5 +44,8 @@
     "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
     "phaser-ce": "^2.7.5"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
