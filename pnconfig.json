@@ -2,9 +2,6 @@
   "copy": 
   {
     "css": "css",
-    "data": "data",
-    "fonts": "font",
-    "icons": "icons",
     "images": "img",
     "sounds": "snd",
     "vendor": "vendor"

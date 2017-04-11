@@ -1,6 +1,11 @@
 {
-  "game": [],
-	"external": [],
+  "build": {
+    "game": [
+      "data",
+      "font"
+    ],
+	  "external": []
+  },
 	"port": 5550,
 	"interval": 750,
 	"serve": "build",
