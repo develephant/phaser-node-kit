@@ -677,7 +677,7 @@ module.exports = PreloadState
 <p>As far as states are concerned, you may visit this one most often to add additional assets to your game.</p>
 <p>Once the <em>PreloadState</em> has run its course, it will load the <em>MenuState</em>.</p>
 <h4 id="menustatejs">MenuState.js</h4>
-<p>Main menus are generally not very complex. A background and a couple buttons is usually the bulk of it. The <em>MenuState</em> here is very minimal. We are simply displaying the <em>Phaser</em> logo, and the waiting for the <code>onTap</code> signal from the input manager.</p>
+<p>Main menus are generally not very complex. A background and a couple buttons is usually the bulk of it. The <em>MenuState</em> here is very minimal. We are simply displaying the <em>Phaser</em> logo, and waiting for the <code>onTap</code> signal from the input manager.</p>
 <pre><code class="js">class MenuState {
   preload() { }
 
@@ -727,7 +727,7 @@ module.exports = GameState
 <p>Here we are simply wiring up an external module. Its also where we jump off the state train, and move into our development domain.</p>
 <h2 id="enginejs">Engine.js</h2>
 <p>A moment ago I mentioned that the <em>GameState</em> would be your <em>leanest</em> state. This is done by building modules in the root <code>js</code> directory and adding them to the <em>GameState.js</em>. This approach makes it really simple to change out your <em>engine</em> code with other alternatives for testing ideas, etc.</p>
-<p>Have a look at the <strong><em>Engine.js</em></strong> file in the root <em>js</em> directory. This is where we put the game "controller" code. This <em>Engine.js</em> module will be used to orchastrate the systems in your game, and makes it much easier to manage your game overall. A single point of entry and exit.</p>
+<p>Have a look at the <strong><em>Engine.js</em></strong> file in the root <em>js</em> directory. This is where we put the game "controller" code. This <em>Engine.js</em> module will be used to orchestrate the systems in your game, and makes it much easier to manage your game overall. A single point of entry and exit.</p>
 <p>A simple <em>Engine.js</em>:</p>
 <pre><code class="js">class Engine {
   constructor(game) {
@@ -750,7 +750,7 @@ module.exports = GameState
 module.exports = Engine
 </code></pre>
 
-<p>We are simply taking in the <code>game</code> reference and storing for use within the class, as well as, loading up an image for something to do. We've also added the <code>update</code> and <code>render</code> methods that were wired up in the <em>GameState.js</em> file.</p>
+<p>We are simply taking in the <code>game</code> reference and storing it for use within the class, as well as displaying an image (because purple whales are cute). We've also added the <code>update</code> and <code>render</code> methods that were wired up in the <em>GameState.js</em> file.</p>
 <p>An important distinction to make here is that the <code>game</code> property is an entry point to most of the Phaser library. In a state file, you can also access certain systems with a shorter syntax. This can cause mistakes when jumping into different coding contexts.</p>
 <p>As an example, in the engine file we'd access the <em>Input</em> manager through the <code>game</code> property:</p>
 <pre><code class="js">this.game.input
