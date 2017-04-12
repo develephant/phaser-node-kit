@@ -24,6 +24,6 @@ The "live" build of your game can be found at: http://localhost:5550.
 
 ## Docs
 
-### [Click here for usage documentation](https://develephant.github.io/phaser-node-kit/)
+### [Click here for the fine print.](https://develephant.github.io/phaser-node-kit/)
 
 #### `phaser-node-kit` &Star; &copy; 2017 develephant &Star; MIT license
