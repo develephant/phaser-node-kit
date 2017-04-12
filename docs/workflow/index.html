@@ -702,7 +702,7 @@ module.exports = BootState
     this.load.setPreloadSprite(this.preloadBar)
 
     this.load.image('logo', 'img/logo.png')
-    this.load.image('node', 'img/node.png')
+    this.load.image('pnlogo', 'img/pnlogo.png')
   }
 
   create() {
@@ -780,7 +780,7 @@ module.exports = GameState
     let node = this.game.add.image(
       this.game.world.centerX, 
       this.game.world.centerY, 
-      'node')
+      'pnlogo')
 
     node.anchor.set(.5)
   }
@@ -792,7 +792,7 @@ module.exports = GameState
 module.exports = Engine
 </code></pre>
 
-<p>We are simply taking in the <code>game</code> reference and storing for use within the class, as well as, load up the <em>Node</em> logo for something to do. We've also added the <code>update</code> and <code>render</code> methods that were wired up in the <em>GameState.js</em> file.</p>
+<p>We are simply taking in the <code>game</code> reference and storing for use within the class, as well as, loading up an image for something to do. We've also added the <code>update</code> and <code>render</code> methods that were wired up in the <em>GameState.js</em> file.</p>
 <blockquote>
 <p>An important distinction to make here is that the <code>game</code> property is an entry point to most of the Phaser library. In a state file, you also access certain systems with a shorter syntax. This can cause mistakes when jumping into different coding contexts.</p>
 </blockquote>
