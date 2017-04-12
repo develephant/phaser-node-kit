@@ -1,8 +1,6 @@
 // PHASER IS IMPORTED AS AN EXTERNAL BUNDLE IN INDEX.HTML
 const runPhaser = function(renderMode) {
 
-  renderMode = Phaser.CANVAS
-
   /* States */
   const bootState     = require('./states/BootState')
   const preloadState  = require('./states/PreloadState')
