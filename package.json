@@ -11,9 +11,6 @@
       "es2015"
     ]
   },
-  "scripts": {
-    "postinstall": "scripts/postinstall.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/develephant/phaser-node-kit.git"
@@ -43,7 +40,9 @@
     "colors": "^1.1.2",
     "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
-    "phaser-ce": "^2.7.5"
+    "node-spawn": "0.0.7",
+    "phaser-ce": "^2.7.5",
+    "request": "^2.81.0"
   },
   "engines": {
     "node": ">=6.0.0"
