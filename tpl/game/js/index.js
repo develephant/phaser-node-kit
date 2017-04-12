@@ -1,7 +1,5 @@
 // PHASER IS IMPORTED AS AN EXTERNAL BUNDLE IN INDEX.HTML
 const runPhaser = function(renderMode) {
-
-  /* States */
   const bootState     = require('./states/BootState')
   const preloadState  = require('./states/PreloadState')
   const menuState     = require('./states/MenuState')
@@ -17,12 +15,9 @@ const runPhaser = function(renderMode) {
 
   //start the `boot` state
   game.state.start('Boot')
-
 }
 
 Phaser.Device.whenReady(() => {
-  let renderMode = Phaser.CANVAS
-
   if (Phaser.Device.desktop) {
     renderMode = Phaser.WEBGL
   } else if (Phaser.Device.android) {
@@ -37,5 +32,4 @@ Phaser.Device.whenReady(() => {
   }
 
   runPhaser(renderMode)
-  
 })

@@ -31,27 +31,18 @@ const parser = new ArgParser({
 })
 
 parser.addArgument('action', {
-  help: 'Control the build.',
+  help: 'Phaser Node Kit Actions',
   choices: [
-    'build',
-    'clean',
     'init',
     'watch',
-    'bundle',
-    'phaserify'
+    'clean',
   ]
 })
 
 const args = parser.parseArgs()
 
-if (args.action === 'build') {
-  builder.run()
-} else if (args.action === 'clean') {
+if (args.action === 'clean') {
   cleaner.run()
-} else if (args.action === 'bundle') {
-  bundler.bundle()
-} else if (args.action === 'phaserify') {
-  phaserify.run()
 } else if (args.action === 'watch') {
   watcher.run()
 } else if (args.action === 'init') {

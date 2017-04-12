@@ -239,13 +239,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build" title="Build" class="md-nav__link">
-    Build
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#watch" title="Watch" class="md-nav__link">
     Watch
   </a>
@@ -344,13 +337,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build" title="Build" class="md-nav__link">
-    Build
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#watch" title="Watch" class="md-nav__link">
     Watch
   </a>
@@ -397,26 +383,19 @@
 <p>Run <code>pnkit init</code> on the command line in the directory you created.</p>
 </li>
 </ul>
-<p><em>package.json</em></p>
+<blockquote>
 <p>You can create your own <em>package.json</em> before running <code>pnkit init</code> or a bare one will be created for you.</p>
-<p><strong><em>In either case the package.json file will be injected with some configuration settings. This file needs to stay with your project after initalization.</em></strong></p>
-<h2 id="build">Build</h2>
-<p>When you are ready to compile your files to your <em>build</em> directory, you run:</p>
-<p><code>pnkit build</code></p>
-<p>The should be done on the command line in the root project directory. The game "distribution" files will be contained in the <em>build</em> directory.</p>
-<p>All files are flushed in the <em>build</em> directory on each build, so if you'd like a "snapshot" via git or other means, now is the time to do it.</p>
-<p><em>See below for the "watch" build option.</em></p>
+</blockquote>
 <h2 id="watch">Watch</h2>
-<p>If you would like to watch the game development files, and trigger a build on changes, you use a slightly different command. This one references <em>npm</em>:</p>
-<p><code>npm run watch</code></p>
-<p>Phaser Node Kit will now run a build when any of the files are updated. Additonally you can view the current game state in your local browser. By default the url is <strong>http://localhost:5550</strong>.</p>
+<p>Watch the game development files, and trigger a build on changes:</p>
+<p><code>pnkit watch</code></p>
+<p>Phaser Node Kit will now run a build when any of the files are updated. </p>
+<p>View the current game state in your browser at <strong>http://localhost:5550</strong>.</p>
 <p>You can leave the browser window running, and it will refresh with each build.</p>
-<p><em>For other "watch" options see <a href="../notes/">Additional Notes</a>.</em></p>
-<p><em>To make adjustments to the watch server, see <a href="../config/">Configuration</a>.</em></p>
 <h2 id="clean">Clean</h2>
 <p>There may be times when you want to clean the <em>build</em> directory between builds. You can do this using:</p>
 <p><code>pnkit clean</code></p>
-<p>This will flush the <em>build</em> folder and rebuild the project at its current state.</p>
+<p>This will flush the <em>build</em> folder and rebuild the project in its current state.</p>
 <p>A <code>clean</code> is run before each build takes place, so this command only has real usage in "non-watched" development.</p>
                 
                   

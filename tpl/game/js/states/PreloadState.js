@@ -1,9 +1,7 @@
 
 /* Preload State */
 class PreloadState {
-
   preload() {
-
     this.preloadBar = null
  
     this.preloadBar = this.game.add.sprite(
@@ -16,7 +14,7 @@ class PreloadState {
     this.load.setPreloadSprite(this.preloadBar)
 
     this.load.image('logo', 'img/logo.png')
-    this.load.image('node', 'img/node.png')
+    this.load.image('pnlogo', 'img/pnlogo.png')
   }
 
   create() {
@@ -24,7 +22,6 @@ class PreloadState {
   }
 
   update() { }
-
   render() { }
 }
 
