@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a fairly opinionated workflow and build tool for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel (es2015)\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nOn each build cycle your javascript code is compiled to a \nBrowserify\n bundle ready to play. The \nphaser.js\n file is gathered from \nnpm\n and added as a vendor file during the initial creation of your project.\n\n\nPhaser Node Kit imposes a minimal workflow. For straight forward game development the workflow should prove accommodating. See the \nWorkflow\n section for more details.",
+            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a fairly opinionated workflow and build tool for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nOn each build cycle your javascript code is compiled to a \nBrowserify\n bundle ready to play. The \nphaser.js\n file is gathered from \nnpm\n and added as a vendor file during the initial creation of your project.\n\n\nPhaser Node Kit imposes a minimal workflow. For straight forward game development the workflow should prove accommodating. See the \nWorkflow\n section for more details.",
             "title": "Overview"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#what-is-it",
-            "text": "Phaser Node Kit  is a fairly opinionated workflow and build tool for creating  PhaserJS  games using  NodeJS .  You may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the  Node  environment.  The build tool is basically a collection of some popular libraries to get your game built for distribution using  Node .  The major components consist of:  NodeJS  Babel (es2015)  Browserify  and of course...  PhaserJS",
+            "text": "Phaser Node Kit  is a fairly opinionated workflow and build tool for creating  PhaserJS  games using  NodeJS .  You may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the  Node  environment.  The build tool is basically a collection of some popular libraries to get your game built for distribution using  Node .  The major components consist of:  NodeJS  Babel  Browserify  and of course...  PhaserJS",
             "title": "What Is It?"
         },
         {
@@ -22,12 +22,12 @@
         },
         {
             "location": "/install/",
-            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNodeJS\n command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.\n\n\nYou can have a running game framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run Phaser Node Kit you will need \nNodeJS\n version 6 or higher. You can download the latest releases from the site at \nhttps://nodejs.org\n.\n\n\nnpm\n\n\n\n\nPhaser Node Kit requires administrative privileges to work properly\n\n\n\n\nUsing the \nnpm\n package manager (included with NodeJS), run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to make sure its installed:\n\n\npnkit -v",
+            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.\n\n\nYou can have a running game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run Phaser Node Kit you will need \nNodeJS\n version 6 or higher. You can download the latest releases from the site at \nhttps://nodejs.org\n.\n\n\nnpm\n\n\nUsing the \nnpm\n package manager (included with NodeJS), run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain its installed:\n\n\npnkit -v",
             "title": "Installation"
         },
         {
             "location": "/install/#installation",
-            "text": "Phaser Node Kit  is a  NodeJS  command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.  You can have a running game framework up in a handful of seconds.",
+            "text": "Phaser Node Kit  is a  Node  command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.  You can have a running game development framework up in a handful of seconds.",
             "title": "Installation"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "location": "/install/#npm",
-            "text": "Phaser Node Kit requires administrative privileges to work properly   Using the  npm  package manager (included with NodeJS), run the following on the command line:  sudo npm i -g phaser-node-kit  This will install the tool, and make it available anywhere on the command line as  pnkit .  You can get the latest version information to make sure its installed:  pnkit -v",
+            "text": "Using the  npm  package manager (included with NodeJS), run the following on the command line:  sudo npm i -g phaser-node-kit  This will install the tool, and make it available anywhere on the command line as  pnkit .  You can get the latest version information to be certain its installed:  pnkit -v",
             "title": "npm"
         },
         {
