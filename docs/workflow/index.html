@@ -751,9 +751,7 @@ module.exports = Engine
 </code></pre>
 
 <p>We are simply taking in the <code>game</code> reference and storing for use within the class, as well as, loading up an image for something to do. We've also added the <code>update</code> and <code>render</code> methods that were wired up in the <em>GameState.js</em> file.</p>
-<blockquote>
-<p>An important distinction to make here is that the <code>game</code> property is an entry point to most of the Phaser library. In a state file, you also access certain systems with a shorter syntax. This can cause mistakes when jumping into different coding contexts.</p>
-</blockquote>
+<p>An important distinction to make here is that the <code>game</code> property is an entry point to most of the Phaser library. In a state file, you can also access certain systems with a shorter syntax. This can cause mistakes when jumping into different coding contexts.</p>
 <p>As an example, in the engine file we'd access the <em>Input</em> manager through the <code>game</code> property:</p>
 <pre><code class="js">this.game.input
 </code></pre>
