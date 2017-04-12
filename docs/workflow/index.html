@@ -251,13 +251,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-big-picture" title="The Big Picture" class="md-nav__link">
-    The Big Picture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#indexes" title="Indexes" class="md-nav__link">
     Indexes
   </a>
@@ -292,14 +285,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#states" title="States" class="md-nav__link">
-    States
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#phaser-node-kit-states" title="Phaser Node Kit States" class="md-nav__link">
     Phaser Node Kit States
   </a>
@@ -332,11 +317,6 @@
   <a href="#gamestatejs" title="GameState.js" class="md-nav__link">
     GameState.js
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -432,13 +412,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-big-picture" title="The Big Picture" class="md-nav__link">
-    The Big Picture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#indexes" title="Indexes" class="md-nav__link">
     Indexes
   </a>
@@ -473,14 +446,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#states" title="States" class="md-nav__link">
-    States
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#phaser-node-kit-states" title="Phaser Node Kit States" class="md-nav__link">
     Phaser Node Kit States
   </a>
@@ -513,11 +478,6 @@
   <a href="#gamestatejs" title="GameState.js" class="md-nav__link">
     GameState.js
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -559,18 +519,17 @@
                 
                 <h1 id="workflow">Workflow</h1>
 <p>So here comes the "fairly opinionated" part.</p>
-<p>While there is nothing different about the coding in general, there are some design choices made on where files reside and how they are incorporated into the workflow that you need to be aware of.</p>
+<p>While there is nothing different about the coding in general, there are some design choices made on where files reside.</p>
 <p>But before we go there, some context...</p>
 <h2 id="some-context">Some Context</h2>
-<p>I've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and have spent the last five working with the Lua game development community, mostly building server based tools. I heart making games, teaching, and developing tools and workflows to help people make games with less fuss. Having discovered <strong>Phaser</strong> and brushing up with <strong>Node</strong>, I've found my ideal tool set. Having used this kit for a while now, I thought others might enjoy using it as well.</p>
-<p>Okay, enough context. ^_^</p>
-<h2 id="the-big-picture">The Big Picture</h2>
-<p>I like to get up and running quick when an idea hits me. I prototype constantly (or just noodle around) and don't like to spend time on tooling. "Set it and forget it" works great for me.</p>
-<p>The goal for <strong>Phaser Node Kit</strong> was to be able to get to the <em>creative</em> phase as quick as possible. </p>
+<p>I've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and have spent the last five working with the Lua game development community, mostly building server based tools.</p>
+<p>I heart making games, teaching, and developing tools and workflows to help people make games with less fuss. </p>
+<p>Being able to hit the ground running when inspiration calls is crucial. I prototype constantly (or just noodle around) and don't like to spend time on tooling. "Set it and forget it" works great for me.</p>
+<p>The goal for <em>Phaser Node Kit</em> was to be able to get to the <strong><em>creative</em></strong> phase as quick as possible. </p>
 <p>So with a <code>pnkit init</code></p>
 <p>And a <code>pnkit watch</code></p>
 <p>I'm looking at a "live" build in my browser ready to hack on, with a <em>build</em> folder ready to serve or bundle with something like <a href="https://cordova.apache.org/">Cordova</a>.</p>
-<p>I enjoy a certain amount of abstraction in code -- though sometimes a one-pager will do just fine. With <em>Phaser Node Kit</em> there is a level of abstraction in regards to <em>Phaser</em> states, which will be explained more below. Beyond that its pretty much business as usual for both <em>Phaser</em> and <em>Node</em>.</p>
+<p>Okay, enough context. On with the show. ^_^</p>
 <h2 id="indexes">Indexes</h2>
 <p>The different index files have some basic data for their particular domain.</p>
 <h3 id="indexcss">index.css</h3>
@@ -618,8 +577,7 @@ Phaser.Device.whenReady(() =&gt; {
 })
 </code></pre>
 
-<h2 id="states">States</h2>
-<h3 id="phaser-node-kit-states">Phaser Node Kit States</h3>
+<h2 id="phaser-node-kit-states">Phaser Node Kit States</h2>
 <p><em>Phaser</em> has an excellent state system to manange different game scenes; like the main menu, game play, IAP, etc. I tend to put as little as possible in the state files. Usually just boilerplate and configuration based code. <em>Phaser Node Kit</em> keeps all the state files in a <code>state</code> directory inside of the main <code>js</code> folder.</p>
 <p>There are four state files included, which run in the following order:</p>
 <ul>
