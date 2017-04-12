@@ -147,12 +147,12 @@
         },
         {
             "location": "/config/",
-            "text": "Configuration\n\n\nPhaser Node Kit\n is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths, and adjust the watch server settings.\n\n\npnkit.json\n\n\nAll of the Phaser Node Kit project settings can be found in the \npnkit.json\n file at the root of the project directory. This file is critical to the tools operation. Don't lose it. ^_^\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"build\": {\n    \"game\": [\n      \"data\",\n      \"font\"\n    ],\n    \"external\": []\n  }\n}\n\n\n\n\nConfiguration Keys\n\n\nWhat follows is a detailed explanation of the \npnkit.json\n keys.\n\n\nbuild\n\n\nThe build section contains two keys holding arrays named \ngame\n and \nexternal\n, which can be used to adjust your source directories.\n\n\ngame\n\n\nBy default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:\n\n\n\n\n\n\nCreate the new directory in your \ngame\n folder.\n\n\n\n\n\n\nAdd an entry to the \ngame\n key array.\n\n\n\n\n\n\nIn the default config above, the directories \ndata\n and \nfont\n are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the \npnkit.json\n file.\n \n\n\nexternal\n\n\nIf you would like to include directories in the build from outside of the \ngame\n directory, you can add them to this array. The steps are the same as for the \ngame\n key above.",
+            "text": "Configuration\n\n\nPhaser Node Kit\n is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths to the build.\n\n\npnkit.json\n\n\nAll of the Phaser Node Kit project settings can be found in the \npnkit.json\n file at the root of the project directory. This file is critical to the tools operation. Don't lose it. ^_^\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"build\": {\n    \"game\": [\n      \"data\",\n      \"font\"\n    ],\n    \"external\": []\n  }\n}\n\n\n\n\nConfiguration Keys\n\n\nbuild\n\n\nThe build section contains two keys holding arrays named \ngame\n and \nexternal\n, which can be used to \nextend\n the default directory settings.\n\n\ngame\n\n\nBy default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:\n\n\n\n\n\n\nCreate the new directory in your \ngame\n folder.\n\n\n\n\n\n\nAdd an entry to the \ngame\n key array.\n\n\n\n\n\n\nIn the default config above, the directories \ndata\n and \nfont\n are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the \nbuild.game\n array.\n \n\n\nexternal\n\n\nIf you would like to include directories in the build from outside of the \ngame\n directory, you can add them to this array. The steps are the same as for the \ngame\n key above. \n\n\n\n\nJavascript files are only compiled if they live in the \ngame/js\n directory. Any other file type is copied directly to the \nbuild\n folder on each build.",
             "title": "Configuration"
         },
         {
             "location": "/config/#configuration",
-            "text": "Phaser Node Kit  is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths, and adjust the watch server settings.",
+            "text": "Phaser Node Kit  is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths to the build.",
             "title": "Configuration"
         },
         {
@@ -162,22 +162,22 @@
         },
         {
             "location": "/config/#configuration-keys",
-            "text": "What follows is a detailed explanation of the  pnkit.json  keys.",
+            "text": "",
             "title": "Configuration Keys"
         },
         {
             "location": "/config/#build",
-            "text": "The build section contains two keys holding arrays named  game  and  external , which can be used to adjust your source directories.",
+            "text": "The build section contains two keys holding arrays named  game  and  external , which can be used to  extend  the default directory settings.",
             "title": "build"
         },
         {
             "location": "/config/#game",
-            "text": "By default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:    Create the new directory in your  game  folder.    Add an entry to the  game  key array.    In the default config above, the directories  data  and  font  are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the  pnkit.json  file.",
+            "text": "By default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:    Create the new directory in your  game  folder.    Add an entry to the  game  key array.    In the default config above, the directories  data  and  font  are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the  build.game  array.",
             "title": "game"
         },
         {
             "location": "/config/#external",
-            "text": "If you would like to include directories in the build from outside of the  game  directory, you can add them to this array. The steps are the same as for the  game  key above.",
+            "text": "If you would like to include directories in the build from outside of the  game  directory, you can add them to this array. The steps are the same as for the  game  key above.    Javascript files are only compiled if they live in the  game/js  directory. Any other file type is copied directly to the  build  folder on each build.",
             "title": "external"
         },
         {

@@ -420,7 +420,7 @@
                 
                 
                 <h1 id="configuration">Configuration</h1>
-<p><strong>Phaser Node Kit</strong> is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths, and adjust the watch server settings.</p>
+<p><strong>Phaser Node Kit</strong> is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths to the build.</p>
 <h2 id="pnkitjson">pnkit.json</h2>
 <p>All of the Phaser Node Kit project settings can be found in the <strong><em>pnkit.json</em></strong> file at the root of the project directory. This file is critical to the tools operation. Don't lose it. ^_^</p>
 <p>The default configuration file looks like so:</p>
@@ -436,9 +436,8 @@
 </code></pre>
 
 <h2 id="configuration-keys">Configuration Keys</h2>
-<p>What follows is a detailed explanation of the <em>pnkit.json</em> keys.</p>
 <h3 id="build">build</h3>
-<p>The build section contains two keys holding arrays named <code>game</code> and <code>external</code>, which can be used to adjust your source directories.</p>
+<p>The build section contains two keys holding arrays named <code>game</code> and <code>external</code>, which can be used to <em>extend</em> the default directory settings.</p>
 <h4 id="game">game</h4>
 <p>By default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:</p>
 <ul>
@@ -449,9 +448,12 @@
 <p>Add an entry to the <code>game</code> key array.</p>
 </li>
 </ul>
-<p><em>In the default config above, the directories <strong>data</strong> and <strong>font</strong> are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the <strong>pnkit.json</strong> file.</em> </p>
+<p><em>In the default config above, the directories <strong>data</strong> and <strong>font</strong> are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the <code>build.game</code> array.</em> </p>
 <h4 id="external">external</h4>
 <p>If you would like to include directories in the build from outside of the <em>game</em> directory, you can add them to this array. The steps are the same as for the <code>game</code> key above. </p>
+<blockquote>
+<p>Javascript files are only compiled if they live in the <strong><em>game/js</em></strong> directory. Any other file type is copied directly to the <em>build</em> folder on each build.</p>
+</blockquote>
                 
                   
                 

@@ -1,6 +1,6 @@
 # `phaser-node-kit`
 
-### Phaser Node Kit - Game Development Using Phaser and Node
+### Phaser Node Kit - Rapid Game Development Using Phaser and Node
 
 ## Install
 
@@ -11,16 +11,12 @@ npm i -g phaser-node-kit
 ## Usage
 
 ```js
-pnkit [init|clean|build]
+pnkit [init|watch|clean]
 ```
 
 ## Getting Started
 
-It takes only 3 steps to get up and running developing games using NodeJS and PhaserJS.
-
-_Install phaser-node-kit globally (it's a command line utility)_
-
-`sudo i -g phaser-node-kit`
+It takes only two steps to start making games with Phaser Node Kit:
 
 _Run the initialization in a folder of your choice_
 
@@ -28,12 +24,12 @@ _Run the initialization in a folder of your choice_
 
 _Start the watch server_
 
-`npm run watch`
+`pnkit watch`
 
-> The default port for viewing your game is 5550. This can be changed in the _pnkit.json_ file.
+> The url for viewing your game is http://localhost:5550.
 
 ## Documentation
 
-### [Click here for usage documentation.](https://develephant.github.io/phaser-node-kit/)
+### [Click here for usage documentation](https://develephant.github.io/phaser-node-kit/)
 
 #### `phaser-node-kit` &Star; &copy; 2017 develephant &Star; MIT license
