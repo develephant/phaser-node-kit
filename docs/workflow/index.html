@@ -726,7 +726,7 @@ module.exports = GameState
 <p>Not much of a game. But believe it or not, the <em>GameState</em> will probably be your <em>leanest</em> state.</p>
 <p>Here we are simply wiring up an external module. Its also where we jump off the state train, and move into our development domain.</p>
 <h2 id="enginejs">Engine.js</h2>
-<p>A moment ago I mentioned that the <em>GameState</em> would be your <em>leanest</em> state. This is done by building modules in the root <code>js</code> directory and adding them to the <em>GameState.js</em>. This approach makes it really simple to change out your <em>engine</em> code with other alternatives for testing ideas, etc.</p>
+<p>A moment ago I mentioned that the <em>GameState</em> would be your <em>leanest</em> state. This is done by building modules in the root <code>js</code> directory and adding them the <em>Engine.js</em> file. This approach makes it really simple to change out your <em>engine</em> code with other alternatives for testing ideas, etc.</p>
 <p>Have a look at the <strong><em>Engine.js</em></strong> file in the root <em>js</em> directory. This is where we put the game "controller" code. This <em>Engine.js</em> module will be used to orchestrate the systems in your game, and makes it much easier to manage your game overall. A single point of entry and exit.</p>
 <p>A simple <em>Engine.js</em>:</p>
 <pre><code class="js">class Engine {
@@ -772,7 +772,7 @@ module.exports = SomeClass
 </code></pre>
 
 <h2 id="extending-classes">Extending Classes</h2>
-<p>Again, we are working in the root <code>js</code> folder now (and forever). As an example of extending a <em>Phaser</em> class, lets look at a Sprite:</p>
+<p>Again, we are working in the root <code>js</code> folder now (and forever!). As an example of extending a <em>Phaser</em> class, lets look at a Sprite:</p>
 <pre><code class="js">class MySprite extends Phaser.Sprite {
   constructor(game, x, y, img) {
     super(game, x, y, img)
