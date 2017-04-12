@@ -8,7 +8,7 @@ class Engine {
     let node = this.game.add.image(
       this.game.world.centerX, 
       this.game.world.centerY, 
-      'node')
+      'pnlogo')
 
     node.anchor.set(.5)
   }

@@ -14,7 +14,7 @@ class PreloadState {
     this.load.setPreloadSprite(this.preloadBar)
 
     this.load.image('logo', 'img/logo.png')
-    this.load.image('node', 'img/node.png')
+    this.load.image('pnlogo', 'img/pnlogo.png')
   }
 
   create() {
