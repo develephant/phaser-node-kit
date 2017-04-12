@@ -1,6 +1,8 @@
 # `phaser-node-kit`
 
-### Phaser Node Kit - Rapid Game Development Using Phaser and Node
+![pnkit](http://develephant.com/projects/pnlogo.png)
+
+### Rapid Game Development Using Phaser and Node
 
 ## Install
 
