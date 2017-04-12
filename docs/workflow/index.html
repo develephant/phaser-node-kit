@@ -797,9 +797,9 @@ module.exports = Engine
 
 <p>We are simply taking in the <code>game</code> reference and storing for use within the class.</p>
 <blockquote>
-<p>An important distinction to make here is that the <code>game</code> is an entry point to the Phaser library. In a state file, the <code>game</code> is inferred. This can cause mistakes when jumping into different coding contexts.</p>
+<p>An important distinction to make here is that the <code>game</code> property is an entry point to most of the Phaser library. In a state file, you also access certain systems with a shorter syntax. This can cause mistakes when jumping into different coding contexts.</p>
 </blockquote>
-<p>As an example, in the engine file we'd use the following to access the input manager:</p>
+<p>As an example, in the engine file we'd access the <em>Input</em> manager through the <code>game</code> property:</p>
 <pre><code class="js">this.game.input
 </code></pre>
 
