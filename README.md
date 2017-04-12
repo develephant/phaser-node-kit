@@ -2,7 +2,7 @@
 
 ![pnkit](http://develephant.com/projects/pnlogo.png)
 
-### Rapid Game Development Using Phaser and Node
+### Rapid Game Development with Phaser and Node
 
 > This project is in heavy development, check back often for updates.
 
