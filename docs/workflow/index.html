@@ -833,8 +833,8 @@ const Engine = require('../engine)
 
 class GameState() {
   create() {
-    let ui = new Ui(this)
-    let engine = new Engine(this, ui)
+    let ui = new Ui(this.game)
+    let engine = new Engine(this.game, ui)
   }
 }
 
