@@ -22,12 +22,12 @@
         },
         {
             "location": "/install/",
-            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.\n\n\nYou can have a running game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run Phaser Node Kit you will need \nNodeJS\n version 6 or higher. You can download the latest releases from the site at \nhttps://nodejs.org\n.\n\n\nnpm\n\n\nUsing the \nnpm\n package manager (included with NodeJS), run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain its installed:\n\n\npnkit -v",
+            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n command line application that is installed globally making the tool at the ready for when creative game sparks fly.\n\n\nYou can have a running game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run Phaser Node Kit you will need \nNodeJS\n version 6 or higher. You can download the latest releases from the site at \nhttps://nodejs.org\n.\n\n\nnpm\n\n\nUsing the \nnpm\n package manager (included with NodeJS), run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain its installed:\n\n\npnkit -v",
             "title": "Installation"
         },
         {
             "location": "/install/#installation",
-            "text": "Phaser Node Kit  is a  Node  command line application that is installed \"globally\" making the tool at the ready for when creative game sparks land on your head.  You can have a running game development framework up in a handful of seconds.",
+            "text": "Phaser Node Kit  is a  Node  command line application that is installed globally making the tool at the ready for when creative game sparks fly.  You can have a running game development framework up in a handful of seconds.",
             "title": "Installation"
         },
         {
