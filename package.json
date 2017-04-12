@@ -41,7 +41,7 @@
     "light-server": "^2.0.1",
     "node-spawn": "0.0.7",
     "phaser-ce": "^2.7.5",
-    "request": "^2.81.0"
+    "simple-get": "^2.4.0"
   },
   "engines": {
     "node": ">=6.0.0"
