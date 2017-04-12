@@ -19,9 +19,8 @@
     "phaser",
     "phaserjs",
     "game",
-    "nodejs",
-    "es6",
-    "webapp",
+    "bundler",
+    "builder",
     "html5"
   ],
   "author": "develephant <code@develephant> (http://www.develephant.com)",
