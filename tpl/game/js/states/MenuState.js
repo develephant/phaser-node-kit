@@ -4,7 +4,6 @@ class MenuState {
   preload() { }
 
   create() {
-    //bg
     let logo = this.game.add.image(
       this.game.world.centerX, 
       this.game.world.centerY, 

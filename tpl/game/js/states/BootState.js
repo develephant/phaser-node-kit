@@ -3,7 +3,6 @@
 class BootState {
 
   preload() {
-
     this.stage.backgroundColor = 0x000000
 
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
@@ -27,11 +26,7 @@ class BootState {
   }
 
   update() { }
-
   render() { }
-  
 }
 
 module.exports = BootState
-
-

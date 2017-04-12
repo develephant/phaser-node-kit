@@ -1,21 +1,17 @@
 
 /* Game State */
+const Engine = require('../Engine')
+
 class GameState {
-  preload() { 
-    console.log('game state started') 
+  preload() { }
+
+  create() {
+    this.engine = new Engine(this.game)
+    this.engine.run()
   }
-
-  create() { 
-    let node = this.game.add.image(
-      this.game.world.centerX, 
-      this.game.world.centerY, 
-      'node')
-
-    node.anchor.set(.5)
-  }
-
-  update() { }
-  render() { }
+  
+  update() { this.engine.update() }
+  render() { this.engine.render() }
 }
 
 module.exports = GameState
