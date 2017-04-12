@@ -18,19 +18,15 @@ npm i -g phaser-node-kit
 pnkit [init|watch|clean]
 ```
 
-## Getting Started
+## Insert Coin
 
-It takes only two steps to start making games with Phaser Node Kit:
+It takes only two steps to start making games with _Phaser Node Kit_:
 
-_Run the initialization in a folder of your choice_
+  1. Run the initialization in a folder of your choosing: `pnkit init`
 
-`pnkit init`
+  2. Start the watch server and build on file updates: `pnkit watch`
 
-_Start the watch server_
-
-`pnkit watch`
-
-> The url for viewing your game is http://localhost:5550.
+The "live" build of your game can be found at: http://localhost:5550.
 
 ## Documentation
 
