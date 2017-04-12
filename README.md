@@ -12,12 +12,6 @@
 npm i -g phaser-node-kit
 ```
 
-## Usage
-
-```js
-pnkit [init|watch|clean]
-```
-
 ## Insert Coin
 
 It takes only two steps to start making games with _Phaser Node Kit_:
@@ -28,7 +22,7 @@ It takes only two steps to start making games with _Phaser Node Kit_:
 
 The "live" build of your game can be found at: http://localhost:5550.
 
-## Documentation
+## Docs
 
 ### [Click here for usage documentation](https://develephant.github.io/phaser-node-kit/)
 
