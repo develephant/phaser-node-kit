@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "Phaser Node Kit\n\n\n\n\nRapid game development using Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a fairly opinionated workflow and build tool for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel (es2015)\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nOn each build cycle your javascript code is compiled to a \nBrowserify\n bundle ready to play. The \nphaser.js\n file is gathered from \nnpm\n and added as a vendor file during the initial creation of your project. See \nAdditional Notes\n for more information about the handling of the \nphaser.js\n library.\n\n\nPhaser Node Kit imposes a certain workflow, but provides a few entry points to handle unique situations. For straight forward game development the workflow should prove accommodating. See the \nWorkflow\n section for more details.",
+            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a fairly opinionated workflow and build tool for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel (es2015)\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nOn each build cycle your javascript code is compiled to a \nBrowserify\n bundle ready to play. The \nphaser.js\n file is gathered from \nnpm\n and added as a vendor file during the initial creation of your project. See \nAdditional Notes\n for more information about the handling of the \nphaser.js\n library.\n\n\nPhaser Node Kit imposes a certain workflow, but provides a few entry points to handle unique situations. For straight forward game development the workflow should prove accommodating. See the \nWorkflow\n section for more details.",
             "title": "Overview"
         },
         {
             "location": "/#phaser-node-kit",
-            "text": "Rapid game development using Phaser and Node",
+            "text": "Rapid Game Development with Phaser and Node",
             "title": "Phaser Node Kit"
         },
         {
