@@ -40,6 +40,7 @@
     "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
     "node-spawn": "0.0.7",
+    "node-watch": "^0.5.2",
     "phaser-ce": "^2.7.5",
     "simple-get": "^2.4.0"
   },
