@@ -4,9 +4,9 @@ class MenuState {
   preload() { }
 
   create() {
-    let logo = this.game.add.image(
-      this.game.world.centerX, 
-      this.game.world.centerY, 
+    let logo = this.add.image(
+      this.world.centerX, 
+      this.world.centerY, 
       'logo')
     
     logo.anchor.set(.5)

@@ -1,10 +1,10 @@
 // PHASER IS IMPORTED AS AN EXTERNAL BUNDLE IN INDEX.HTML
 
 Phaser.Device.whenReady(() => {
-  const bootState     = require('./states/BootState')
-  const preloadState  = require('./states/PreloadState')
-  const menuState     = require('./states/MenuState')
-  const gameState     = require('./states/GameState')
+  const bootState     = require('./BootState')
+  const preloadState  = require('./PreloadState')
+  const menuState     = require('./MenuState')
+  const gameState     = require('./GameState')
 
   const game = new Phaser.Game(800, 600, Phaser.AUTO, 'game')
 
