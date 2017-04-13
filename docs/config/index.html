@@ -215,18 +215,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../workflow/" title="Workflow" class="md-nav__link">
-      Workflow
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -271,23 +259,44 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build" title="build" class="md-nav__link">
-    build
+  <a href="#ignore" title="ignore" class="md-nav__link">
+    ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include" title="include" class="md-nav__link">
+    include
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watch" title="watch" class="md-nav__link">
+    watch
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#game" title="game" class="md-nav__link">
-    game
+  <a href="#port" title="port" class="md-nav__link">
+    port
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#external" title="external" class="md-nav__link">
-    external
+  <a href="#host" title="host" class="md-nav__link">
+    host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh" title="refresh" class="md-nav__link">
+    refresh
   </a>
   
 </li>
@@ -317,8 +326,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../notes/" title="Additional Notes" class="md-nav__link">
-      Additional Notes
+    <a href="../project/" title="The Project" class="md-nav__link">
+      The Project
     </a>
   </li>
 
@@ -329,8 +338,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../issues/" title="Issues/Corrections" class="md-nav__link">
-      Issues/Corrections
+    <a href="../notes/" title="Notes" class="md-nav__link">
+      Notes
     </a>
   </li>
 
@@ -371,23 +380,44 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build" title="build" class="md-nav__link">
-    build
+  <a href="#ignore" title="ignore" class="md-nav__link">
+    ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include" title="include" class="md-nav__link">
+    include
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watch" title="watch" class="md-nav__link">
+    watch
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#game" title="game" class="md-nav__link">
-    game
+  <a href="#port" title="port" class="md-nav__link">
+    port
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#external" title="external" class="md-nav__link">
-    external
+  <a href="#host" title="host" class="md-nav__link">
+    host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh" title="refresh" class="md-nav__link">
+    refresh
   </a>
   
 </li>
@@ -420,39 +450,50 @@
                 
                 
                 <h1 id="configuration">Configuration</h1>
-<p><strong>Phaser Node Kit</strong> is a fairly opinionated framework, so configuration options are minimal. You can however add some different resource paths to the build.</p>
+<p><strong>Phaser Node Kit</strong> configuration options are minimal. You can however add external directories into the build, as well as adjust some of the <em>watcher</em> settings.</p>
 <h2 id="pnkitjson">pnkit.json</h2>
-<p>All of the Phaser Node Kit project settings can be found in the <strong><em>pnkit.json</em></strong> file at the root of the project directory. This file is critical to the tools operation. Don't lose it. ^_^</p>
+<p>The <em>Phaser Node Kit</em> configuration can be found in the <strong>pnkit.json</strong> file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.</p>
 <p>The default configuration file looks like so:</p>
 <pre><code class="json">{
-  &quot;build&quot;: {
-    &quot;game&quot;: [
-      &quot;data&quot;,
-      &quot;font&quot;
-    ],
-    &quot;external&quot;: []
+  &quot;ignore&quot;: [ &quot;.DS_Store&quot; ],
+  &quot;include&quot;: [],
+  &quot;watch&quot;: {
+    &quot;port&quot;: 5550,
+    &quot;host&quot;: &quot;127.0.0.1&quot;,
+    &quot;refresh&quot;: true
   }
 }
 </code></pre>
 
 <h2 id="configuration-keys">Configuration Keys</h2>
-<h3 id="build">build</h3>
-<p>The build section contains two keys holding arrays named <code>game</code> and <code>external</code>, which can be used to <em>extend</em> the default directory settings.</p>
-<h4 id="game">game</h4>
-<p>By default the game template created with Phaser Node Kit is minimal. To add additional directories to your build, do the following:</p>
-<ul>
-<li>
-<p>Create the new directory in your <em>game</em> folder.</p>
-</li>
-<li>
-<p>Add an entry to the <code>game</code> key array.</p>
-</li>
-</ul>
-<p><em>In the default config above, the directories <strong>data</strong> and <strong>font</strong> are added to the project as additional entries. If you don't need that functionality, you can remove the directories, as well as the entries in the <code>build.game</code> array.</em> </p>
-<h4 id="external">external</h4>
-<p>If you would like to include directories in the build from outside of the <em>game</em> directory, you can add them to this array. The steps are the same as for the <code>game</code> key above. </p>
+<h3 id="ignore">ignore</h3>
+<p>You can fill this array with folders, files, and extension types that you would like the <em>watcher</em> to ignore.</p>
+<p>For example:</p>
+<pre><code class="json">{
+  &quot;ignore&quot;: [&quot;.tps&quot;, &quot;stuff&quot;, &quot;secret.json&quot;] 
+}
+
+</code></pre>
+
+<h3 id="include">include</h3>
+<p>By design, only files and folders in the <em>game</em> directory are included in a build. To add directories from outside of the <em>game</em> folder, add them to this array.</p>
+<p>Assuming a folder at the root of the project folder named "spritesheets":</p>
+<pre><code class="json">{
+  &quot;include&quot;: [&quot;spritesheets&quot;]
+}
+</code></pre>
+
+<h3 id="watch">watch</h3>
+<p>This <code>watch</code> section contains settings for the <em>watcher</em>.</p>
+<h4 id="port">port</h4>
+<p>The port to serve the "live" game build on. The default is <code>5550</code>.</p>
+<h4 id="host">host</h4>
+<p>The host to serve the "live" game build on. Change this to test the build over your local network. The default is <code>127.0.0.1</code>. </p>
+<h4 id="refresh">refresh</h4>
+<p>Whether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is <code>true</code>.</p>
+<hr />
 <blockquote>
-<p>Javascript files are only compiled if they live in the <strong><em>game/js</em></strong> directory. Any other file type is copied directly to the <em>build</em> folder on each build.</p>
+<p>If you change the configuration while the <em>watcher</em> is running, be sure to stop and restart it to make the configuration active.</p>
 </blockquote>
                 
                   
@@ -472,7 +513,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../workflow/" title="Workflow" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../cli/" title="Commands" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -481,19 +522,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Workflow
+                Commands
               </span>
             </div>
           </a>
         
         
-          <a href="../notes/" title="Additional Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../project/" title="The Project" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Additional Notes
+                The Project
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

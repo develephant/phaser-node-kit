@@ -260,18 +260,6 @@
 
 
   <li class="md-nav__item">
-    <a href="workflow/" title="Workflow" class="md-nav__link">
-      Workflow
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="config/" title="Configuration" class="md-nav__link">
       Configuration
     </a>
@@ -284,8 +272,8 @@
 
 
   <li class="md-nav__item">
-    <a href="notes/" title="Additional Notes" class="md-nav__link">
-      Additional Notes
+    <a href="project/" title="The Project" class="md-nav__link">
+      The Project
     </a>
   </li>
 
@@ -296,8 +284,8 @@
 
 
   <li class="md-nav__item">
-    <a href="issues/" title="Issues/Corrections" class="md-nav__link">
-      Issues/Corrections
+    <a href="notes/" title="Notes" class="md-nav__link">
+      Notes
     </a>
   </li>
 
@@ -357,9 +345,9 @@
 <p><img alt="pnkit" src="./img/pnlogo.png" /></p>
 <p><strong><em>Rapid Game Development with Phaser and Node</em></strong></p>
 <h2 id="what-is-it">What Is It?</h2>
-<p><strong>Phaser Node Kit</strong> is a fairly opinionated workflow and build tool for creating <strong><a href="http://phaser.io">PhaserJS</a></strong> games using <strong><a href="http://nodejs.org">NodeJS</a></strong>.</p>
+<p><strong>Phaser Node Kit</strong> is a build tool, and project template for creating <strong><a href="http://phaser.io">PhaserJS</a></strong> games using <strong><a href="http://nodejs.org">NodeJS</a></strong>.</p>
 <p>You may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the <em>Node</em> environment.</p>
-<p>The build tool is basically a collection of some popular libraries to get your game built for distribution using <em>Node</em>.</p>
+<p>The build tool is basically a collection of some popular libraries to get your game built for distribution using <em>Node</em>. The project template is a mininal running <em>Phaser.js</em> game, with included states.</p>
 <p>The major components consist of:</p>
 <p><strong><a href="http://nodejs.org">NodeJS</a></strong></p>
 <p><strong><a href="https://babeljs.io/">Babel</a></strong></p>
@@ -367,8 +355,11 @@
 <p><em>and of course...</em></p>
 <p><strong><a href="https://phaser.io">PhaserJS</a></strong></p>
 <h2 id="how-it-works">How It Works</h2>
-<p>On each build cycle your javascript code is compiled to a <em>Browserify</em> bundle ready to play. The <em>phaser.js</em> file is gathered from <em>npm</em> and added as a vendor file during the initial creation of your project.</p>
-<p>Phaser Node Kit imposes a minimal workflow. For straight forward game development the workflow should prove accommodating. See the <a href="workflow/">Workflow</a> section for more details.</p>
+<p><em>Phaser Node Kit</em> only cares about two types of files, javascript and everything else.</p>
+<p>With the javascript, the kit will bundle up your game code with <em>Browserify</em> on changes.</p>
+<p>For everything else, the kit "hot" copies the files in and out of the <em>build</em> directory.</p>
+<p>The <em>Phaser CE</em> library is added when you initialize a new game project as a vendor file.</p>
+<p>It all allows you to make games quicker. See the <a href="project/">The Project</a> for more details.</p>
                 
                   
                 

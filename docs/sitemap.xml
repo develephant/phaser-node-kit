@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-04-12</lastmod>
+     <lastmod>2017-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/install/</loc>
-     <lastmod>2017-04-12</lastmod>
+     <lastmod>2017-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,15 +20,7 @@
     
     <url>
      <loc>/cli/</loc>
-     <lastmod>2017-04-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/workflow/</loc>
-     <lastmod>2017-04-12</lastmod>
+     <lastmod>2017-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +28,15 @@
     
     <url>
      <loc>/config/</loc>
-     <lastmod>2017-04-12</lastmod>
+     <lastmod>2017-04-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/project/</loc>
+     <lastmod>2017-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,15 +44,7 @@
     
     <url>
      <loc>/notes/</loc>
-     <lastmod>2017-04-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/issues/</loc>
-     <lastmod>2017-04-12</lastmod>
+     <lastmod>2017-04-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
