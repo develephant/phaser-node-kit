@@ -4,6 +4,6 @@
   "watch": {
     "port": 5550,
     "host": "127.0.0.1",
-    "refreshDelay": 500
+    "refresh": true
   }
 }
