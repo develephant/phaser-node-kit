@@ -4,8 +4,6 @@
 
 ### Rapid Game Development with Phaser and Node
 
-> This project is in heavy development, check back often for updates.
-
 ## Install
 
 ```
