@@ -266,13 +266,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#include" title="include" class="md-nav__link">
-    include
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#watch" title="watch" class="md-nav__link">
     watch
   </a>
@@ -387,13 +380,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#include" title="include" class="md-nav__link">
-    include
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#watch" title="watch" class="md-nav__link">
     watch
   </a>
@@ -450,13 +436,12 @@
                 
                 
                 <h1 id="configuration">Configuration</h1>
-<p><strong>Phaser Node Kit</strong> configuration options are minimal. You can however add external directories into the build, as well as adjust some of the <em>watcher</em> settings.</p>
+<p><strong>Phaser Node Kit</strong> configuration options are minimal. You can however ignore files, directories, and extensions, as well as adjust some of the <em>watcher</em> settings.</p>
 <h2 id="pnkitjson">pnkit.json</h2>
 <p>The <em>Phaser Node Kit</em> configuration can be found in the <strong>pnkit.json</strong> file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.</p>
 <p>The default configuration file looks like so:</p>
 <pre><code class="json">{
   &quot;ignore&quot;: [ &quot;.DS_Store&quot; ],
-  &quot;include&quot;: [],
   &quot;watch&quot;: {
     &quot;port&quot;: 5550,
     &quot;host&quot;: &quot;127.0.0.1&quot;,
@@ -473,14 +458,6 @@
   &quot;ignore&quot;: [&quot;.tps&quot;, &quot;stuff&quot;, &quot;secret.json&quot;] 
 }
 
-</code></pre>
-
-<h3 id="include">include</h3>
-<p>By design, only files and folders in the <em>game</em> directory are included in a build. To add directories from outside of the <em>game</em> folder, add them to this array.</p>
-<p>Assuming a folder at the root of the project folder named "spritesheets":</p>
-<pre><code class="json">{
-  &quot;include&quot;: [&quot;spritesheets&quot;]
-}
 </code></pre>
 
 <h3 id="watch">watch</h3>

@@ -72,17 +72,17 @@
         },
         {
             "location": "/config/",
-            "text": "Configuration\n\n\nPhaser Node Kit\n configuration options are minimal. You can however add external directories into the build, as well as adjust some of the \nwatcher\n settings.\n\n\npnkit.json\n\n\nThe \nPhaser Node Kit\n configuration can be found in the \npnkit.json\n file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"ignore\": [ \".DS_Store\" ],\n  \"include\": [],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}\n\n\n\n\nConfiguration Keys\n\n\nignore\n\n\nYou can fill this array with folders, files, and extension types that you would like the \nwatcher\n to ignore.\n\n\nFor example:\n\n\n{\n  \"ignore\": [\".tps\", \"stuff\", \"secret.json\"] \n}\n\n\n\n\n\ninclude\n\n\nBy design, only files and folders in the \ngame\n directory are included in a build. To add directories from outside of the \ngame\n folder, add them to this array.\n\n\nAssuming a folder at the root of the project folder named \"spritesheets\":\n\n\n{\n  \"include\": [\"spritesheets\"]\n}\n\n\n\n\nwatch\n\n\nThis \nwatch\n section contains settings for the \nwatcher\n.\n\n\nport\n\n\nThe port to serve the \"live\" game build on. The default is \n5550\n.\n\n\nhost\n\n\nThe host to serve the \"live\" game build on. Change this to test the build over your local network. The default is \n127.0.0.1\n. \n\n\nrefresh\n\n\nWhether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is \ntrue\n.\n\n\n\n\n\n\nIf you change the configuration while the \nwatcher\n is running, be sure to stop and restart it to make the configuration active.",
+            "text": "Configuration\n\n\nPhaser Node Kit\n configuration options are minimal. You can however ignore files, directories, and extensions, as well as adjust some of the \nwatcher\n settings.\n\n\npnkit.json\n\n\nThe \nPhaser Node Kit\n configuration can be found in the \npnkit.json\n file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}\n\n\n\n\nConfiguration Keys\n\n\nignore\n\n\nYou can fill this array with folders, files, and extension types that you would like the \nwatcher\n to ignore.\n\n\nFor example:\n\n\n{\n  \"ignore\": [\".tps\", \"stuff\", \"secret.json\"] \n}\n\n\n\n\n\nwatch\n\n\nThis \nwatch\n section contains settings for the \nwatcher\n.\n\n\nport\n\n\nThe port to serve the \"live\" game build on. The default is \n5550\n.\n\n\nhost\n\n\nThe host to serve the \"live\" game build on. Change this to test the build over your local network. The default is \n127.0.0.1\n. \n\n\nrefresh\n\n\nWhether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is \ntrue\n.\n\n\n\n\n\n\nIf you change the configuration while the \nwatcher\n is running, be sure to stop and restart it to make the configuration active.",
             "title": "Configuration"
         },
         {
             "location": "/config/#configuration",
-            "text": "Phaser Node Kit  configuration options are minimal. You can however add external directories into the build, as well as adjust some of the  watcher  settings.",
+            "text": "Phaser Node Kit  configuration options are minimal. You can however ignore files, directories, and extensions, as well as adjust some of the  watcher  settings.",
             "title": "Configuration"
         },
         {
             "location": "/config/#pnkitjson",
-            "text": "The  Phaser Node Kit  configuration can be found in the  pnkit.json  file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.  The default configuration file looks like so:  {\n  \"ignore\": [ \".DS_Store\" ],\n  \"include\": [],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}",
+            "text": "The  Phaser Node Kit  configuration can be found in the  pnkit.json  file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.  The default configuration file looks like so:  {\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}",
             "title": "pnkit.json"
         },
         {
@@ -94,11 +94,6 @@
             "location": "/config/#ignore",
             "text": "You can fill this array with folders, files, and extension types that you would like the  watcher  to ignore.  For example:  {\n  \"ignore\": [\".tps\", \"stuff\", \"secret.json\"] \n}",
             "title": "ignore"
-        },
-        {
-            "location": "/config/#include",
-            "text": "By design, only files and folders in the  game  directory are included in a build. To add directories from outside of the  game  folder, add them to this array.  Assuming a folder at the root of the project folder named \"spritesheets\":  {\n  \"include\": [\"spritesheets\"]\n}",
-            "title": "include"
         },
         {
             "location": "/config/#watch",
