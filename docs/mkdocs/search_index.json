@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a build tool, and project template for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n. The project template is a mininal running \nPhaser.js\n game, with included states.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nPhaser Node Kit\n only cares about two types of files, javascript and everything else.\n\n\nWith the javascript, the kit will bundle up your game code with \nBrowserify\n on changes.\n\n\nFor everything else, the kit \"hot\" copies the files in and out of the \nbuild\n directory.\n\n\nThe \nPhaser CE\n library is added when you initialize a new game project as a vendor file.\n\n\nIt all allows you to make games quicker. See the \nThe Project\n for more details.",
+            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a build tool and project template for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n. The project template is a mininal running \nPhaser.js\n game, with included states.\n\n\nThe major components consist of:\n\n\nNodeJS\n\n\nBabel\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nPhaser Node Kit\n only cares about two types of files, javascript and everything else.\n\n\nWith the javascript, the kit will bundle up your game code with \nBrowserify\n on changes. For everything else, the kit \"hot\" copies the files in and out of the \nbuild\n directory. The \nPhaser CE\n library is added when you initialize a new game project as a vendor file. It all allows you to make games quicker. See the \nThe Project\n for more details.\n\n\nSome Context\n\n\nI've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and have spent the last five working with the Lua game development community.\n\n\nBeing able to hit the ground running when inspiration calls is crucial. I prototype constantly (or just noodle around) and don't like to spend time on tooling.\n\n\nThe goal for \nPhaser Node Kit\n was to be able to get to the \ncreative\n phase as quick as possible. \n\n\nSo with a \npnkit init\n and a \npnkit watch\n, I'm looking at a \"live\" build in my browser ready to hack on, with a \nbuild\n folder ready to serve or bundle with something like \nCordova\n.\n\n\nI hope it helps you to be more creative in your game development adventures as well.\n\n\n^_^ Happy game making!",
             "title": "Overview"
         },
         {
@@ -12,27 +12,32 @@
         },
         {
             "location": "/#what-is-it",
-            "text": "Phaser Node Kit  is a build tool, and project template for creating  PhaserJS  games using  NodeJS .  You may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the  Node  environment.  The build tool is basically a collection of some popular libraries to get your game built for distribution using  Node . The project template is a mininal running  Phaser.js  game, with included states.  The major components consist of:  NodeJS  Babel  Browserify  and of course...  PhaserJS",
+            "text": "Phaser Node Kit  is a build tool and project template for creating  PhaserJS  games using  NodeJS .  You may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the  Node  environment.  The build tool is basically a collection of some popular libraries to get your game built for distribution using  Node . The project template is a mininal running  Phaser.js  game, with included states.  The major components consist of:  NodeJS  Babel  Browserify  and of course...  PhaserJS",
             "title": "What Is It?"
         },
         {
             "location": "/#how-it-works",
-            "text": "Phaser Node Kit  only cares about two types of files, javascript and everything else.  With the javascript, the kit will bundle up your game code with  Browserify  on changes.  For everything else, the kit \"hot\" copies the files in and out of the  build  directory.  The  Phaser CE  library is added when you initialize a new game project as a vendor file.  It all allows you to make games quicker. See the  The Project  for more details.",
+            "text": "Phaser Node Kit  only cares about two types of files, javascript and everything else.  With the javascript, the kit will bundle up your game code with  Browserify  on changes. For everything else, the kit \"hot\" copies the files in and out of the  build  directory. The  Phaser CE  library is added when you initialize a new game project as a vendor file. It all allows you to make games quicker. See the  The Project  for more details.",
             "title": "How It Works"
         },
         {
+            "location": "/#some-context",
+            "text": "I've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and have spent the last five working with the Lua game development community.  Being able to hit the ground running when inspiration calls is crucial. I prototype constantly (or just noodle around) and don't like to spend time on tooling.  The goal for  Phaser Node Kit  was to be able to get to the  creative  phase as quick as possible.   So with a  pnkit init  and a  pnkit watch , I'm looking at a \"live\" build in my browser ready to hack on, with a  build  folder ready to serve or bundle with something like  Cordova .  I hope it helps you to be more creative in your game development adventures as well.  ^_^ Happy game making!",
+            "title": "Some Context"
+        },
+        {
             "location": "/install/",
-            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n command line application that is installed globally making the tool at the ready for when creative game sparks fly.\n\n\nYou can have a running \"live\" game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run Phaser Node Kit you will need \nNodeJS\n version 6 or higher.\n\n\nnpm\n\n\nUsing \nnpm\n, run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain it's installed:\n\n\npnkit -v",
+            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n application that is installed globally, making the tool at the ready for when creative game sparks fly.\n\n\nYou can have a running \"live\" game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run \nPhaser Node Kit\n you will need \nNodeJS\n version 6 or higher.\n\n\nnpm\n\n\nUsing \nnpm\n, run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain it's installed:\n\n\npnkit -v",
             "title": "Installation"
         },
         {
             "location": "/install/#installation",
-            "text": "Phaser Node Kit  is a  Node  command line application that is installed globally making the tool at the ready for when creative game sparks fly.  You can have a running \"live\" game development framework up in a handful of seconds.",
+            "text": "Phaser Node Kit  is a  Node  application that is installed globally, making the tool at the ready for when creative game sparks fly.  You can have a running \"live\" game development framework up in a handful of seconds.",
             "title": "Installation"
         },
         {
             "location": "/install/#requirements",
-            "text": "To run Phaser Node Kit you will need  NodeJS  version 6 or higher.",
+            "text": "To run  Phaser Node Kit  you will need  NodeJS  version 6 or higher.",
             "title": "Requirements"
         },
         {
@@ -42,7 +47,7 @@
         },
         {
             "location": "/cli/",
-            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://localhost:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.",
+            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit\n will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://localhost:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.",
             "title": "Commands"
         },
         {
@@ -57,7 +62,7 @@
         },
         {
             "location": "/cli/#watch",
-            "text": "Watch the game development files, and trigger a build on changes:  pnkit watch  Phaser Node Kit will now run a build when any of the files are updated.   View the current game state in your browser at  http://localhost:5550 .  You can leave the browser window running, and it will refresh with each build.",
+            "text": "Watch the game development files, and trigger a build on changes:  pnkit watch  Phaser Node Kit  will now run a build when any of the files are updated.   View the current game state in your browser at  http://localhost:5550 .  You can leave the browser window running, and it will refresh with each build.",
             "title": "Watch"
         },
         {
