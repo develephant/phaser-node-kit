@@ -5,7 +5,8 @@
   "preferGlobal": true,
   "bin": {
     "pnkit": "cli.js",
-    "babel": "node_modules/.bin/babel"
+    "babel": "node_modules/.bin/babel",
+    "light-server": "node_modules/.bin/light-server"
   },
   "babel": {
     "presets": [
