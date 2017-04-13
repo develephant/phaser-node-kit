@@ -1,9 +1,9 @@
 {
-  "build": {
-    "game": [
-      "data",
-      "font"
-    ],
-	  "external": []
+  "ignore": [ ".DS_Store" ],
+  "include": [],
+  "watch": {
+    "port": 5550,
+    "host": "127.0.0.1",
+    "refresh": true
   }
 }

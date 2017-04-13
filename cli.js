@@ -7,21 +7,14 @@
  * @license MIT
  * https://github.com/develephant/phaser-node-kit
  */
-const Build = require('./lib/build')
-const Clean = require('./lib/clean')
-const Phaserify = require('./lib/phaserify')
-
-const init = require('./lib/init')
-
-const ArgParser = require('argparse').ArgumentParser
 const pkg = require('./package')
+const ArgParser = require('argparse').ArgumentParser
 
-const bundler = require('./lib/bundler')
-const watcher = require('./lib/watch')
+const Build = require('./lib/build')
+const Watch = require('./lib/watch')
 
 const builder = new Build()
-const cleaner = new Clean()
-const phaserify = new Phaserify()
+const watcher = new Watch()
 
 const parser = new ArgParser({
   description: 'Phaser Node Kit',
@@ -35,16 +28,16 @@ parser.addArgument('action', {
   choices: [
     'init',
     'watch',
-    'clean',
+    'sync',
   ]
 })
 
 const args = parser.parseArgs()
 
-if (args.action === 'clean') {
-  cleaner.run()
+if (args.action === 'sync') {
+  builder.runInitBuild(true)
 } else if (args.action === 'watch') {
   watcher.run()
 } else if (args.action === 'init') {
-  init.run()
+  builder.runInitBuild()
 }
