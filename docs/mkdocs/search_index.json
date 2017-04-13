@@ -27,7 +27,7 @@
         },
         {
             "location": "/install/",
-            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n application that is installed globally, making the tool at the ready for when creative game sparks fly.\n\n\nYou can have a running \"live\" game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run \nPhaser Node Kit\n you will need \nNodeJS\n version 6 or higher.\n\n\nnpm\n\n\nUsing \nnpm\n, run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on the command line as \npnkit\n.\n\n\nYou can get the latest version information to be certain it's installed:\n\n\npnkit -v",
+            "text": "Installation\n\n\nPhaser Node Kit\n is a \nNode\n application that is installed globally, making the tool at the ready for when creative game sparks fly.\n\n\nYou can have a running \"live\" game development framework up in a handful of seconds.\n\n\nRequirements\n\n\nTo run \nPhaser Node Kit\n you will need \nNodeJS\n version 6 or higher.\n\n\nnpm\n\n\nUsing \nnpm\n, run the following on the command line:\n\n\nsudo npm i -g phaser-node-kit\n\n\nThis will install the tool, and make it available anywhere on your system as \npnkit\n.\n\n\nYou can get the latest version information to be certain it's installed:\n\n\npnkit -v",
             "title": "Installation"
         },
         {
@@ -42,12 +42,12 @@
         },
         {
             "location": "/install/#npm",
-            "text": "Using  npm , run the following on the command line:  sudo npm i -g phaser-node-kit  This will install the tool, and make it available anywhere on the command line as  pnkit .  You can get the latest version information to be certain it's installed:  pnkit -v",
+            "text": "Using  npm , run the following on the command line:  sudo npm i -g phaser-node-kit  This will install the tool, and make it available anywhere on your system as  pnkit .  You can get the latest version information to be certain it's installed:  pnkit -v",
             "title": "npm"
         },
         {
             "location": "/cli/",
-            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit\n will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://localhost:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.",
+            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit\n will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://127.0.0.1:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.",
             "title": "Commands"
         },
         {
@@ -62,7 +62,7 @@
         },
         {
             "location": "/cli/#watch",
-            "text": "Watch the game development files, and trigger a build on changes:  pnkit watch  Phaser Node Kit  will now run a build when any of the files are updated.   View the current game state in your browser at  http://localhost:5550 .  You can leave the browser window running, and it will refresh with each build.",
+            "text": "Watch the game development files, and trigger a build on changes:  pnkit watch  Phaser Node Kit  will now run a build when any of the files are updated.   View the current game state in your browser at  http://127.0.0.1:5550 .  You can leave the browser window running, and it will refresh with each build.",
             "title": "Watch"
         },
         {
