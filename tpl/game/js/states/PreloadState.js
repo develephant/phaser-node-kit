@@ -1,9 +1,7 @@
 
-/* Preload State */
 class PreloadState {
+
   preload() {
-    this.preloadBar = null
- 
     this.preloadBar = this.game.add.sprite(
       this.game.world.centerX, 
       this.game.world.centerY, 

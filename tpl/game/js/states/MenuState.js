@@ -1,6 +1,6 @@
 
-/* Menu State */
 class MenuState {
+
   preload() { }
 
   create() {

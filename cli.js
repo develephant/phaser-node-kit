@@ -7,15 +7,13 @@
  * @license MIT
  * https://github.com/develephant/phaser-node-kit
  */
+const pkg = require('./package')
 const ArgParser = require('argparse').ArgumentParser
+
 const Build = require('./lib/build')
-const Clean = require('./lib/clean')
 const Watch = require('./lib/watch')
 
-const pkg = require('./package')
-
 const builder = new Build()
-const cleaner = new Clean()
 const watcher = new Watch()
 
 const parser = new ArgParser({
@@ -37,7 +35,7 @@ parser.addArgument('action', {
 const args = parser.parseArgs()
 
 if (args.action === 'clean') {
-  cleaner.run()
+  builder.runInitBuild(true)
 } else if (args.action === 'watch') {
   watcher.run()
 } else if (args.action === 'init') {

@@ -1,8 +1,8 @@
 
-/* Game State */
 const Engine = require('../Engine')
 
 class GameState {
+
   preload() { }
 
   create() {

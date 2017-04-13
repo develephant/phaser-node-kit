@@ -1,5 +1,4 @@
 
-/* Boot State */
 class BootState {
 
   preload() {
@@ -8,21 +7,18 @@ class BootState {
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
     this.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
 
-    this.scale.setMinMax(300, 400)
+    this.scale.setMinMax(800, 600)
 
     this.scale.pageAlignVertically = true
     this.scale.pageAlignHorizontally = true
-
-    if (Phaser.Device.desktop === false) {
-      this.scale.forceOrientation(false, true)
-    }
 
     this.load.image('preload', 'img/preload.png')
   }
 
   create() {
     this.input.maxPointers = 1
-    this.state.start('Preloader')
+
+    this.state.start('Preload')
   }
 
   update() { }
