@@ -284,13 +284,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#external-directories" title="External Directories" class="md-nav__link">
-    External Directories
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -455,13 +448,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#external-directories" title="External Directories" class="md-nav__link">
-    External Directories
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -611,18 +597,11 @@
 <h3 id="adding-removing">Adding / Removing</h3>
 <p><strong><em>While the watcher is running (pnkit watch)</em></strong> simply place or create a new directory or file in the <em>game</em> folder to add it to the project. Remove a directory to remove it from the project.</p>
 <p>Some additional folders you may want could be: <code>fonts</code>, <code>data</code>, <code>snds</code>, etc.</p>
-<p>Any items (besides javascript files) that are added will "hot" copied to the <em>build</em> directory. The reverse holds true when removing items.</p>
+<p>Any items (besides javascript files) that are added will be "hot" copied to the <em>build</em> directory. The reverse holds true when removing items.</p>
 <blockquote>
 <p>If you add items to the <em>game</em> directory while the watcher is not active, you will need to "sync" the project (pnkit sync).</p>
 </blockquote>
 <p>See <a href="../cli/">Commands</a>.</p>
-<h3 id="external-directories">External Directories</h3>
-<p><strong><em>External directories are not "hot" copied.</em></strong></p>
-<p>To include directories from outside of the <em>game</em> folder add them to the <a href="../config/">Configuration</a>.</p>
-<p>Make sure to stop the <em>watcher</em> and run a <strong>pnkit sync</strong> to sync the build.</p>
-<blockquote>
-<p>External directories are pulled fresh on each <em>bundler</em> run as well. This action is unique to the external directories.</p>
-</blockquote>
 <h2 id="javascript">Javascript</h2>
 <p>The <strong><em>js</em></strong> directory is a special folder. It must reside in the <em>game</em> folder, and be named exactly <strong><em>js</em></strong>.</p>
 <p>All of your <strong><em>.js</em></strong> files and classes will live in this directory. When javascript files in this directory are updated, the <em>bundler</em> will run a pass on the files, creating a <em>Browserify</em> bundle.</p>
