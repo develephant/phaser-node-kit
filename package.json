@@ -31,7 +31,6 @@
   "homepage": "https://github.com/develephant/phaser-node-kit#readme",
   "devDependencies": {},
   "dependencies": {
-    "@develephant/fsp": "^1.0.0",
     "argparse": "^1.0.9",
     "babel-cli": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
@@ -39,7 +38,6 @@
     "colors": "^1.1.2",
     "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
-    "node-spawn": "0.0.7",
     "node-watch": "^0.5.2",
     "phaser-ce": "^2.7.5",
     "simple-get": "^2.4.0"
