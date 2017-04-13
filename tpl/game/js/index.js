@@ -1,7 +1,6 @@
 // PHASER IS IMPORTED AS AN EXTERNAL BUNDLE IN INDEX.HTML
 
-const runPhaser = function(renderMode) {
-
+Phaser.Device.whenReady(() => {
   const bootState     = require('./states/BootState')
   const preloadState  = require('./states/PreloadState')
   const menuState     = require('./states/MenuState')
@@ -15,4 +14,4 @@ const runPhaser = function(renderMode) {
   game.state.add('Game',      gameState)
 
   game.state.start('Boot')
-}
+})

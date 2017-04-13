@@ -28,13 +28,13 @@ parser.addArgument('action', {
   choices: [
     'init',
     'watch',
-    'clean',
+    'sync',
   ]
 })
 
 const args = parser.parseArgs()
 
-if (args.action === 'clean') {
+if (args.action === 'sync') {
   builder.runInitBuild(true)
 } else if (args.action === 'watch') {
   watcher.run()
