@@ -1,14 +1,8 @@
 {
-  "copy": 
-  {
-    "css": "css",
-    "data": "data",
-    "font": "font",
-    "images": "img",
-    "sounds": "snd",
-    "vendor": "vendor"
-  },
-  "bundle": {
-    "javascript": "js"
+  "ignore": [ "js" ],
+  "watch": {
+    "port": 5550,
+    "host": "127.0.0.1",
+    "refreshDelay": 500
   }
 }

@@ -1,16 +1,6 @@
 {
-  "dirs": {
-    "game": [
-      "data",
-      "font"
-    ],
-    "external": []
-  },
-  "files": {
-    "ignore": [
-      ".DS_Store"
-    ]
-  },
+  "ignore": [ ".DS_Store" ],
+  "include": [],
   "watch": {
     "port": 5550,
     "host": "127.0.0.1",

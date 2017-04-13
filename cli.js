@@ -12,7 +12,6 @@ const Build = require('./lib/build')
 const Clean = require('./lib/clean')
 const Watch = require('./lib/watch')
 
-const init = require('./lib/init')
 const pkg = require('./package')
 
 const builder = new Build()
@@ -42,5 +41,5 @@ if (args.action === 'clean') {
 } else if (args.action === 'watch') {
   watcher.run()
 } else if (args.action === 'init') {
-  init.run()
+  builder.runInitBuild()
 }
