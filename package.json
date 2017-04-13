@@ -1,6 +1,6 @@
 {
   "name": "phaser-node-kit",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Rapid Game Development with Phaser.js and Node",
   "preferGlobal": true,
   "bin": {
