@@ -14,19 +14,6 @@
   "watch": {
     "port": 5550,
     "host": "127.0.0.1",
-    "dir": "build",
     "refreshDelay": 500
-  },
-  "game": {
-    "width": 800,
-    "height": 600,
-    "antialias": true,
-    "backgroundColor": "#000000",
-    "orientation": "landscape",
-    "orientationLock": true,
-    "scale": "ALL",
-    "fullscreenScale": "ALL",
-    "canvasMode": "AUTO",
-    "scaleMinMax": [ 800, 600 ]
   }
 }

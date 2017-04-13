@@ -15,8 +15,6 @@ const Watch = require('./lib/watch')
 const init = require('./lib/init')
 const pkg = require('./package')
 
-const bundler = require('./lib/bundler')
-
 const builder = new Build()
 const cleaner = new Clean()
 const watcher = new Watch()
