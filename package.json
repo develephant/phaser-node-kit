@@ -4,7 +4,8 @@
   "description": "Rapid Game Development with Phaser.js and Node",
   "preferGlobal": true,
   "bin": {
-    "pnkit": "cli.js"
+    "pnkit": "cli.js",
+    "babel": "node_modules/.bin/babel"
   },
   "babel": {
     "presets": [
