@@ -202,7 +202,7 @@
         },
         {
             "location": "/notes/",
-            "text": "Notes\n\n\nPhaser.js Versions\n\n\nWhen you first install \nPhaser Node Kit\n the current release of \nPhaser CE\n is downloaded for use in any new projects. This version will remain until the kit is updated.\n\n\nIf you would like to use a different version of \nPhaser.js\n simply place a \nphaser.min.js\n file of your choosing in the \ngame/vendor\n directory. Files in the \ngame\n directory are never overwritten by the \nwatcher\n.\n\n\n\n\nIf you have a version of Phaser.js installed in your project directory (via npm) \nbefore running pnkit init\n, then that version will be used instead of the default.\n\n\n\n\nMisc\n\n\nPurple whales are cute.",
+            "text": "Notes\n\n\nPhaser.js Versions\n\n\nWhen you first install \nPhaser Node Kit\n the current release of \nPhaser CE\n is downloaded for use in any new projects. This version will remain until the kit is updated.\n\n\nIf you would like to use a different version of \nPhaser.js\n simply place a \nphaser.min.js\n file of your choosing in the \ngame/vendor\n directory. Files in the \ngame\n directory are never overwritten by the \nwatcher\n.\n\n\nMisc\n\n\nPurple whales are cute.",
             "title": "Notes"
         },
         {
@@ -212,7 +212,7 @@
         },
         {
             "location": "/notes/#phaserjs-versions",
-            "text": "When you first install  Phaser Node Kit  the current release of  Phaser CE  is downloaded for use in any new projects. This version will remain until the kit is updated.  If you would like to use a different version of  Phaser.js  simply place a  phaser.min.js  file of your choosing in the  game/vendor  directory. Files in the  game  directory are never overwritten by the  watcher .   If you have a version of Phaser.js installed in your project directory (via npm)  before running pnkit init , then that version will be used instead of the default.",
+            "text": "When you first install  Phaser Node Kit  the current release of  Phaser CE  is downloaded for use in any new projects. This version will remain until the kit is updated.  If you would like to use a different version of  Phaser.js  simply place a  phaser.min.js  file of your choosing in the  game/vendor  directory. Files in the  game  directory are never overwritten by the  watcher .",
             "title": "Phaser.js Versions"
         },
         {
