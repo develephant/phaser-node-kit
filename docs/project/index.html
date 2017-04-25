@@ -632,12 +632,21 @@
 
 <p>The <em>js/index.js</em> file contains state assignments, the initial <strong>game</strong> object creation, and configuration code. It then launches into the <em>Boot</em> state. If you have needs for additional states, this is where they are assigned.</p>
 <p>Here is where you also make adjustments to the initial <strong>game</strong> object configuration as well.</p>
+<p>In particular, the <em>index.js</em> contains:</p>
+<ul>
+<li>Background color</li>
+<li>Scale mode</li>
+<li>Fullscreen mode</li>
+<li>Scale min/max</li>
+<li>Container alignment</li>
+</ul>
+<p>If you like your backgrounds black, and develop in an 800x600 display size, you generally don't need to touch this file.</p>
 <h3 id="indexcss">index.css</h3>
 <p>The <em>index.css</em> simply contains an implementation of "clean.css" for better visual compatibilty across devices. It also contains a global background color.</p>
 <h2 id="states">States</h2>
 <h3 id="bootstate">BootState</h3>
 <p><strong><em>js/BootState.js</em></strong></p>
-<p>The <em>BootState</em> is the first state that is run once <em>Phaser</em> is ready for it, preloading the "loading" bar image into the image cache, for use in the next state.</p>
+<p>The <em>BootState</em> is the first state that is run once <em>Phaser</em> is ready for it. Here we preload the "loading" bar into the image cache, and also set the <code>maxPointers</code> property.</p>
 <pre><code class="js">class BootState {
 
   preload() {
@@ -656,16 +665,6 @@
 module.exports = BootState
 </code></pre>
 
-<p>In particular, the <em>BootState</em> contains:</p>
-<ul>
-<li>Background color</li>
-<li>Scale mode</li>
-<li>Fullscreen mode</li>
-<li>Scale min/max</li>
-<li>Container alignment</li>
-<li>maxPointers setting</li>
-</ul>
-<p>If you like your backgrounds black, and develop in an 800x600 display size, you never have to touch this file.</p>
 <p>Once the <em>BootState</em> is done, it will automatically launch into the next state, which is the... </p>
 <h3 id="preloadstate">PreloadState</h3>
 <p><strong><em>js/PreloadState.js</em></strong></p>
