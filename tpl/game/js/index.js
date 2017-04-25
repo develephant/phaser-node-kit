@@ -8,7 +8,7 @@ Phaser.Device.whenReady(() => {
 
   const game = new Phaser.Game(800, 600, Phaser.AUTO, 'game')
 
-  game.stage.backgroundColor = 0x0080ff
+  game.stage.backgroundColor = 0x000000
 
   game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
   game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL
