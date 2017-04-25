@@ -611,6 +611,16 @@
 
   const game = new Phaser.Game(800, 600, Phaser.AUTO, 'game')
 
+  game.stage.backgroundColor = 0x000000
+
+  game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+  game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL
+
+  game.scale.setMinMax(800, 600)
+
+  game.scale.pageAlignVertically = true
+  game.scale.pageAlignHorizontally = true
+
   game.state.add('Boot',      bootState)
   game.state.add('Preload',   preloadState)
   game.state.add('MainMenu',  menuState)
@@ -620,33 +630,22 @@
 })
 </code></pre>
 
-<p>The <em>js/index.js</em> file contains very basic state assignments, and the initial <strong>game</strong> object creation. It then launches into the <em>Boot</em> state. If you have needs for additional states, this is where they are assigned.</p>
+<p>The <em>js/index.js</em> file contains state assignments, the initial <strong>game</strong> object creation, and configuration code. It then launches into the <em>Boot</em> state. If you have needs for additional states, this is where they are assigned.</p>
 <p>Here is where you also make adjustments to the initial <strong>game</strong> object configuration as well.</p>
 <h3 id="indexcss">index.css</h3>
 <p>The <em>index.css</em> simply contains an implementation of "clean.css" for better visual compatibilty across devices. It also contains a global background color.</p>
 <h2 id="states">States</h2>
 <h3 id="bootstate">BootState</h3>
 <p><strong><em>js/BootState.js</em></strong></p>
-<p>The <em>BootState</em> is the first state that is run once <em>Phaser</em> is ready for it. It contains mostly configuration code, and preloads the "loading" bar into the image cache, which is used in the next state.</p>
+<p>The <em>BootState</em> is the first state that is run once <em>Phaser</em> is ready for it, preloading the "loading" bar image into the image cache, for use in the next state.</p>
 <pre><code class="js">class BootState {
 
   preload() {
-    this.stage.backgroundColor = 0x000000
-
-    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
-    this.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
-
-    this.scale.setMinMax(800, 600)
-
-    this.scale.pageAlignVertically = true
-    this.scale.pageAlignHorizontally = true
-
     this.load.image('preload', 'img/preload.png')
   }
 
   create() {
     this.input.maxPointers = 1
-
     this.state.start('Preload')
   }
 
