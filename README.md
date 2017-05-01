@@ -2,7 +2,7 @@
 
 ![pnkit](http://develephant.com/projects/pnlogo.png)
 
-### Rapid Game Development with Phaser and Node
+### Rapid Game Development with PhaserJS and Node for Modern Browsers
 
 ## Install
 

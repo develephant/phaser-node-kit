@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with Phaser and Node\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a build tool and project template for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n. The project template is a minimal running \nPhaser.js\n game, with included states.\n\n\nThe major components consist of:\n\n\nNode\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nPhaser Node Kit\n only cares about two types of files, javascript and everything else.\n\n\nWith the javascript, the kit will bundle up your game code with \nBrowserify\n on changes. For everything else, the kit \"hot\" copies the files in and out of the \nbuild\n directory. The \nPhaser CE\n library is added as a vendor file when you initialize a new game project. It all allows you to make games quicker using \nNode\n.\n\n\nSome Context\n\n\nI've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and spent the last five working with the Lua game development community. Now I'm focusing my efforts on Phaser.js.\n\n\nBeing able to hit the ground running when inspiration calls is crucial. I prototype constantly (or just noodle around) and don't like to spend time on tooling.\n\n\nThe goal for \nPhaser Node Kit\n was to be able to get to the \ncreative\n phase as quick as possible. \n\n\nSo with a \npnkit init\n and a \npnkit watch\n, I'm looking at a \"live\" build in my browser ready to hack on, with a \nbuild\n folder ready to serve or bundle with something like \nCordova\n.\n\n\nI hope it helps you to be more creative in your game development adventures as well.\n\n\n^_^ Happy game making!",
+            "text": "Phaser Node Kit\n\n\n\n\nRapid Game Development with PhaserJS and Node for Modern Browsers.\n\n\nWhat Is It?\n\n\nPhaser Node Kit\n is a build tool and project template for creating \nPhaserJS\n games using \nNodeJS\n.\n\n\nYou may be asking yourself, why? And that I can't answer clearly. I just spend most of my time in the \nNode\n environment.\n\n\nThe build tool is basically a collection of some popular libraries to get your game built for distribution using \nNode\n. The project template is a minimal running \nPhaser.js\n game, with included states.\n\n\nThe major components consist of:\n\n\nNode\n\n\nBrowserify\n\n\nand of course...\n\n\nPhaserJS\n\n\nHow It Works\n\n\nPhaser Node Kit\n only cares about two types of files, javascript and everything else.\n\n\nWith the javascript, the kit will bundle up your game code with \nBrowserify\n on changes. For everything else, the kit \"hot\" copies the files in and out of the \nbuild\n directory. The \nPhaser CE\n library is added as a vendor file when you initialize a new game project. It all allows you to make games quicker using \nNode\n.\n\n\nSome Context\n\n\nI've been playing with games for nearly two and a half decades. I was an ActionScript developer from version 1 through 3, and spent the last five working with the Lua game development community. Now I'm focusing my efforts on Phaser.js.\n\n\nBeing able to hit the ground running when inspiration calls is crucial. I prototype constantly (or just noodle around) and don't like to spend time on tooling.\n\n\nThe goal for \nPhaser Node Kit\n was to be able to get to the \ncreative\n phase as quick as possible. \n\n\nSo with a \npnkit init\n and a \npnkit watch\n, I'm looking at a \"live\" build in my browser ready to hack on, with a \nbuild\n folder ready to serve or bundle with something like \nCordova\n.\n\n\nI hope it helps you to be more creative in your game development adventures as well.\n\n\n^_^ Happy game making!",
             "title": "Overview"
         },
         {
             "location": "/#phaser-node-kit",
-            "text": "Rapid Game Development with Phaser and Node",
+            "text": "Rapid Game Development with PhaserJS and Node for Modern Browsers.",
             "title": "Phaser Node Kit"
         },
         {
@@ -207,7 +207,7 @@
         },
         {
             "location": "/notes/",
-            "text": "Notes\n\n\nPhaser.js Versions\n\n\nWhen you first install \nPhaser Node Kit\n the current release of \nPhaser CE\n is downloaded for use in any new projects. This version will remain until the kit is updated.\n\n\nIf you would like to use a different version of \nPhaser.js\n simply place a \nphaser.min.js\n file of your choosing in the \ngame/vendor\n directory. Files in the \ngame\n directory are never overwritten by the \nwatcher\n.\n\n\nMisc\n\n\nPurple whales are cute.",
+            "text": "Notes\n\n\nPhaser.js Versions\n\n\nWhen you first install \nPhaser Node Kit\n the current release of \nPhaser CE\n is downloaded for use in any new projects. This version will remain until the kit is updated.\n\n\nIf you would like to use a different version of \nPhaser.js\n simply place a \nphaser.min.js\n file of your choosing in the \ngame/vendor\n directory. Files in the \ngame\n directory are never overwritten by the \nwatcher\n.\n\n\nSee the \nupdate command\n as well.\n\n\nMisc\n\n\nPurple whales are cute.",
             "title": "Notes"
         },
         {
@@ -217,7 +217,7 @@
         },
         {
             "location": "/notes/#phaserjs-versions",
-            "text": "When you first install  Phaser Node Kit  the current release of  Phaser CE  is downloaded for use in any new projects. This version will remain until the kit is updated.  If you would like to use a different version of  Phaser.js  simply place a  phaser.min.js  file of your choosing in the  game/vendor  directory. Files in the  game  directory are never overwritten by the  watcher .",
+            "text": "When you first install  Phaser Node Kit  the current release of  Phaser CE  is downloaded for use in any new projects. This version will remain until the kit is updated.  If you would like to use a different version of  Phaser.js  simply place a  phaser.min.js  file of your choosing in the  game/vendor  directory. Files in the  game  directory are never overwritten by the  watcher .  See the  update command  as well.",
             "title": "Phaser.js Versions"
         },
         {
