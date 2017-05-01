@@ -1,16 +1,11 @@
 {
   "name": "phaser-node-kit",
   "version": "2.1.7",
-  "description": "Rapid Game Development with Phaser.js and Node",
+  "description": "Rapid Game Development with PhaserJS and Node for Modern Browsers",
   "preferGlobal": true,
   "bin": {
     "pnkit": "cli.js",
     "light-server": "node_modules/.bin/light-server"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   },
   "repository": {
     "type": "git",
@@ -20,9 +15,13 @@
     "phaser",
     "phaserjs",
     "game",
-    "bundler",
-    "builder",
-    "html5"
+    "gamedev",
+    "browserify",
+    "bundle",
+    "scaffold",
+    "framework",
+    "html5",
+    "mobile"
   ],
   "author": "develephant <code@develephant> (http://www.develephant.com)",
   "license": "MIT",
