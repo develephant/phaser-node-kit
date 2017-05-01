@@ -12,9 +12,11 @@ const ArgParser = require('argparse').ArgumentParser
 
 const Build = require('./lib/build')
 const Watch = require('./lib/watch')
+const Update = require('./lib/update')
 
 const builder = new Build()
 const watcher = new Watch()
+const updater = new Update()
 
 const parser = new ArgParser({
   description: 'Phaser Node Kit',
@@ -29,6 +31,7 @@ parser.addArgument('action', {
     'init',
     'watch',
     'sync',
+    'update'
   ]
 })
 
@@ -40,4 +43,6 @@ if (args.action === 'sync') {
   watcher.run()
 } else if (args.action === 'init') {
   builder.runInitBuild()
+} else if (args.action === 'update') {
+  updater.run()
 }

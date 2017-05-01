@@ -1,17 +1,11 @@
 {
   "name": "phaser-node-kit",
-  "version": "2.1.7",
-  "description": "Rapid Game Development with Phaser.js and Node",
+  "version": "2.2.0",
+  "description": "Rapid Game Development with PhaserJS and Node for Modern Browsers",
   "preferGlobal": true,
   "bin": {
     "pnkit": "cli.js",
-    "babel": "node_modules/.bin/babel",
     "light-server": "node_modules/.bin/light-server"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   },
   "repository": {
     "type": "git",
@@ -21,9 +15,13 @@
     "phaser",
     "phaserjs",
     "game",
-    "bundler",
-    "builder",
-    "html5"
+    "gamedev",
+    "browserify",
+    "bundle",
+    "scaffold",
+    "framework",
+    "html5",
+    "mobile"
   ],
   "author": "develephant <code@develephant> (http://www.develephant.com)",
   "license": "MIT",
@@ -34,14 +32,12 @@
   "devDependencies": {},
   "dependencies": {
     "argparse": "^1.0.9",
-    "babel-cli": "^6.24.0",
-    "babel-preset-es2015": "^6.24.0",
     "browserify": "^14.1.0",
     "colors": "^1.1.2",
     "fs-extra": "^2.1.2",
     "light-server": "^2.0.1",
     "node-watch": "^0.5.2",
-    "phaser-ce": "^2.7.5",
+    "phaser-ce": "^2.7.7",
     "simple-get": "^2.4.0"
   },
   "engines": {
