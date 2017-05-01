@@ -47,7 +47,7 @@
         },
         {
             "location": "/cli/",
-            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit\n will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://127.0.0.1:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.",
+            "text": "Commands\n\n\nPhaser Node Kit\n only has a couple commands to get you up and running.\n\n\nInit\n\n\npnkit init\n\n\nTo create a new Phaser Node Kit project do the following:\n\n\n\n\n\n\nCreate a new empty directory.\n\n\n\n\n\n\nCreate a \npackage.json\n file (optional).\n\n\n\n\n\n\nRun \npnkit init\n on the command line in the directory you created.\n\n\n\n\n\n\n\n\nYou can create your own \npackage.json\n before running \npnkit init\n or a bare one will be created for you.\n\n\n\n\nWatch\n\n\nWatch the game development files, and trigger a build on changes:\n\n\npnkit watch\n\n\nPhaser Node Kit\n will now run a build when any of the files are updated. \n\n\nView the current game state in your browser at \nhttp://127.0.0.1:5550\n.\n\n\nYou can leave the browser window running, and it will refresh with each build.\n\n\nSync\n\n\nThere may be times when you want to clean the \nbuild\n directory between builds. Or perhaps you've added some files while the \nwatcher\n wasn't running to catch them. You can run \npnkit sync\n to get your \nbuild\n folder to be in sync again with the \ngame\n folder.\n\n\npnkit sync\n\n\nThis will flush the \nbuild\n folder and rebuild the project in its current state.\n\n\nUpdate\n\n\nUpdates the \nPhaserJS\n library to its latest version.\n\n\nsudo pnkit update\n\n\n\n\nMake sure to use the \nsudo\n command.",
             "title": "Commands"
         },
         {
@@ -71,8 +71,13 @@
             "title": "Sync"
         },
         {
+            "location": "/cli/#update",
+            "text": "Updates the  PhaserJS  library to its latest version.  sudo pnkit update   Make sure to use the  sudo  command.",
+            "title": "Update"
+        },
+        {
             "location": "/config/",
-            "text": "Configuration\n\n\nPhaser Node Kit\n configuration options are minimal. You can however ignore files, directories, and extensions, as well as adjust some of the \nwatcher\n settings.\n\n\npnkit.json\n\n\nThe \nPhaser Node Kit\n configuration can be found in the \npnkit.json\n file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}\n\n\n\n\nConfiguration Keys\n\n\nignore\n\n\nYou can fill this array with folders, files, and extension types that you would like the \nwatcher\n to ignore.\n\n\nFor example:\n\n\n{\n  \"ignore\": [\".tps\", \"stuff\", \"secret.json\"] \n}\n\n\n\n\n\nwatch\n\n\nThis \nwatch\n section contains settings for the \nwatcher\n.\n\n\nport\n\n\nThe port to serve the \"live\" game build on. The default is \n5550\n.\n\n\nhost\n\n\nThe host to serve the \"live\" game build on. Change this to test the build over your local network. The default is \n127.0.0.1\n. \n\n\nrefresh\n\n\nWhether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is \ntrue\n.\n\n\n\n\n\n\nIf you change the configuration while the \nwatcher\n is running, be sure to stop and restart it to make the configuration active.",
+            "text": "Configuration\n\n\nPhaser Node Kit\n configuration options are minimal. You can however ignore files, directories, and extensions, as well as adjust some of the \nwatcher\n settings.\n\n\npnkit.json\n\n\nThe \nPhaser Node Kit\n configuration can be found in the \npnkit.json\n file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.\n\n\nThe default configuration file looks like so:\n\n\n{\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  },\n  \"debug\": true\n}\n\n\n\n\nConfiguration Keys\n\n\nignore\n\n\nYou can fill this array with folders, files, and extension types that you would like the \nwatcher\n to ignore.\n\n\nFor example:\n\n\n{\n  \"ignore\": [\".tps\", \"stuff\", \"secret.json\"] \n}\n\n\n\n\n\nwatch\n\n\nThis \nwatch\n section contains settings for the \nwatcher\n.\n\n\nport\n\n\nThe port to serve the \"live\" game build on. The default is \n5550\n.\n\n\nhost\n\n\nThe host to serve the \"live\" game build on. Change this to test the build over your local network. The default is \n127.0.0.1\n. \n\n\nrefresh\n\n\nWhether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is \ntrue\n.\n\n\ndebug\n\n\nThe \ndebug\n key is a boolean value. If set to \ntrue\n, then the bundle will also contain inline source maps, making it easier to debug your code. If \nfalse\n no source maps are generated.\n\n\nMake sure to set debug to \nfalse\n when making your final build. This makes the bundle leaner.\n\n\n\n\n\n\nIf you change the configuration while the \nwatcher\n is running, be sure to stop and restart it to make the configuration active.",
             "title": "Configuration"
         },
         {
@@ -82,7 +87,7 @@
         },
         {
             "location": "/config/#pnkitjson",
-            "text": "The  Phaser Node Kit  configuration can be found in the  pnkit.json  file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.  The default configuration file looks like so:  {\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  }\n}",
+            "text": "The  Phaser Node Kit  configuration can be found in the  pnkit.json  file at the root your project directory. This file is fairly critical to the kit's operation. You should keep it with the project.  The default configuration file looks like so:  {\n  \"ignore\": [ \".DS_Store\" ],\n  \"watch\": {\n    \"port\": 5550,\n    \"host\": \"127.0.0.1\",\n    \"refresh\": true\n  },\n  \"debug\": true\n}",
             "title": "pnkit.json"
         },
         {
@@ -112,8 +117,13 @@
         },
         {
             "location": "/config/#refresh",
-            "text": "Whether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is  true .    If you change the configuration while the  watcher  is running, be sure to stop and restart it to make the configuration active.",
+            "text": "Whether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is  true .",
             "title": "refresh"
+        },
+        {
+            "location": "/config/#debug",
+            "text": "The  debug  key is a boolean value. If set to  true , then the bundle will also contain inline source maps, making it easier to debug your code. If  false  no source maps are generated.  Make sure to set debug to  false  when making your final build. This makes the bundle leaner.    If you change the configuration while the  watcher  is running, be sure to stop and restart it to make the configuration active.",
+            "title": "debug"
         },
         {
             "location": "/project/",
