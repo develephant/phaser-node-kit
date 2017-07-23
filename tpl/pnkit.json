@@ -3,7 +3,8 @@
   "watch": {
     "port": 5550,
     "host": "127.0.0.1",
-    "refresh": true
+    "refresh": true,
+    "startBrowser": true
   },
   "debug": true
 }
