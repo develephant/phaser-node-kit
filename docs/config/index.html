@@ -459,7 +459,8 @@
   &quot;watch&quot;: {
     &quot;port&quot;: 5550,
     &quot;host&quot;: &quot;127.0.0.1&quot;,
-    &quot;refresh&quot;: true
+    &quot;refresh&quot;: true,
+    &quot;startBrowser&quot; : true
   },
   &quot;debug&quot;: true
 }
@@ -483,6 +484,8 @@
 <p>The host to serve the "live" game build on. Change this to test the build over your local network. The default is <code>127.0.0.1</code>. </p>
 <h4 id="refresh">refresh</h4>
 <p>Whether to refresh the browser automatically on updates to the project. If you set this to false, you will need to remember to refresh your browser to see the current build. The default is <code>true</code>.</p>
+<h4 id="startBrowser">startBrowser</h4>
+<p>Whether to start the browser automatically when running <code>watch</code>. The default is <code>true</code>.</p>
 <h3 id="debug">debug</h3>
 <p>The <code>debug</code> key is a boolean value. If set to <code>true</code>, then the bundle will also contain inline source maps, making it easier to debug your code. If <code>false</code> no source maps are generated.</p>
 <p><strong><em>Make sure to set debug to <code>false</code> when making your final build. This makes the bundle leaner.</em></strong></p>
